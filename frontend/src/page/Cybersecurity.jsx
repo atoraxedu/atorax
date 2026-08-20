@@ -49,7 +49,7 @@ const toolsList = [
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "16 Weeks", label: "Duration" },
-  { value: "100% Online", label: "Format" },
+  { value: "10 Interviews", label: "Interview Opportunities" },
   { value: "120+ Hours", label: "Hands-on Practice" },
   { value: "6 Capstones", label: "Real Projects" },
   { value: "20+", label: "Interview Opportunities" },

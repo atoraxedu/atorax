@@ -33,7 +33,7 @@ import careerPath2 from "../assets/career_path_6_10.png";
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "16 Weeks", label: "Duration" },
-  { value: "100% Online", label: "Format" },
+  { value: "10 Interviews", label: "Interview Opportunities" },
   { value: "8+ Projects", label: "Hands-on Practice" },
   { value: "1 Capstone", label: "Real Projects" },
   { value: "AI Analytics", label: "Core Focus" },

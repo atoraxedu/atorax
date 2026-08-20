@@ -25,10 +25,10 @@ const heroImages = [cyberTechBg, cyberTechBg2, cyberTechBg3];
 
 const trustStats = [
   { value: "24 Weeks", label: "Duration" },
-  { value: "100% Online", label: "Format" },
+  { value: "10 Interviews", label: "Interview Opportunities" },
   { value: "60 Students", label: "Batch Size" },
   { value: "5 Capstones", label: "Enterprise Projects" },
-  { value: "15+ Interviews", label: "Placement" },
+  { value: "15+ Interviews", label: "Interview Opportunities" },
 ];
 
 /* ──────── DATA ──────── */
