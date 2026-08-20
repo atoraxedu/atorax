@@ -88,6 +88,18 @@ const CURRICULUM = [
     topics: ["AI Platform Architecture Design", "SLA Engineering & Performance Benchmarking", "Full AI Operations — Mega Capstone", "Portfolio Review & Career Preparation"],
     project: "AI Automation Platform — managing cross-department enterprise workflows for 500+ concurrent users with full observability."
   },
+  {
+    id: "P6", tag: "Placement", dur: "Weeks 17–24",
+    title: "Placement & AI Interview Preparation",
+    topics: [
+      "Advanced AI Engineering Problems (LLM Patterns, RAG Optimization, Agentic Workflows)",
+      "AI System Design Interview Prep (Vector DBs, Scalable Inference, Model Routing)",
+      "10+ Mock AI Technical & HR Interviews with Industry Experts",
+      "AI Portfolio Building, GitHub & LinkedIn Profile Optimization",
+      "Salary Negotiation Strategies & Direct AI Engineering Referrals"
+    ],
+    project: "Complete interview readiness and direct positioning for top-tier AI Engineer and GenAI Architect roles."
+  }
 ];
 
 const agenticPhases = CURRICULUM.map((c, i) => ({
@@ -610,6 +622,12 @@ const AgenticAndGenAI = () => {
         </div>
       </section>
 
+      {/* SALARY GROWTH */}
+      <SalaryGrowth domain="AgenticAndGenAI" />
+
+      {/* CAREER OUTCOMES */}
+      <CareerOutcomes domain="AgenticAndGenAI" />
+
       {/* ══════════════════════════════════════════
           FAQ
           ══════════════════════════════════════════ */}
@@ -639,12 +657,6 @@ const AgenticAndGenAI = () => {
         </div>
       </section>
 
-      {/* SALARY GROWTH */}
-      <SalaryGrowth domain="AgenticAndGenAI" />
-
-      {/* CAREER OUTCOMES */}
-      <CareerOutcomes domain="AgenticAndGenAI" />
-
       {/* ══════════════════════════════════════════
           FINAL CTA (DARK NAVY)
           ══════════════════════════════════════════ */}
@@ -653,16 +665,16 @@ const AgenticAndGenAI = () => {
         <div style={{maxWidth:680,margin:"0 auto",textAlign:"center",position:"relative",zIndex:1}}>
           <div className="ato-badge" style={{marginBottom:24,display:"inline-flex", background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.1)", color:"#10b981"}}>
             <span style={{width:8,height:8,borderRadius:"50%",background:"#10b981",display:"inline-block"}}/>
-            Limited Seats · {new Date().toLocaleString("default",{month:"long",year:"numeric"})} Cohort
+            WHERE THE HUNGRY BUILD WHAT'S NEXT.
           </div>
           <h2 className="ato-h1" style={{color:"#ffffff",marginBottom:20}}>
-            Ready to build the{" "}
+            Your Next 15 Interviews Calls{" "}
             <span style={{color:"#10b981"}}>
-              future of AI?
+              Guaranteed.*
             </span>
           </h2>
           <p style={{fontSize:18,color:"#94a3b8",marginBottom:40,lineHeight:1.75,maxWidth:520,margin:"0 auto 40px"}}>
-            Join 4,500+ engineers who have transformed their careers. Applications reviewed within 48 hours.
+            Skip the endless applications. Get direct access to 500+ hiring partners and accelerate your path to your next career opportunity.
           </p>
           <div style={{display:"flex",justifyContent:"center",gap:14,flexWrap:"wrap"}}>
             <button onClick={apply} className="ato-btn-p" style={{fontSize:17,padding:"18px 46px"}}>Apply Now — Free <ArrowRight size={20}/></button>

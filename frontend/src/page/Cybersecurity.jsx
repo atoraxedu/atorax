@@ -48,7 +48,7 @@ const toolsList = [
 
 /* ─── Static Data ─── */
 const trustStats = [
-  { value: "24 Weeks", label: "Duration" },
+  { value: "16 Weeks", label: "Duration" },
   { value: "100% Online", label: "Format" },
   { value: "120+ Hours", label: "Hands-on Practice" },
   { value: "6 Capstones", label: "Real Projects" },
@@ -99,81 +99,53 @@ const softwarePhases = [
     id: "cy-phase-1",
     phase: "PHASE 1",
     duration: "WEEKS 1–4",
-    title: "Security Foundations & Networking",
+    title: "Security Foundations & Ethical Hacking",
     focusLabel: "CURRICULUM",
     focus: [
-      "Cybersecurity Fundamentals (CIA Triad, Threat Landscape, Attack Vectors)",
-      "Networking for Security (OSI Model, TCP/IP, DNS, Firewalls, VPNs)",
-      "Linux & Command Line Mastery (Bash, File Permissions, Process Management)",
-      "Cryptography (Encryption, Hashing, PKI, SSL/TLS, Certificates)"
+      "Cybersecurity Fundamentals (CIA Triad, Threat Landscape)",
+      "Networking & Cryptography (OSI Model, TCP/IP, Encryption)",
+      "Reconnaissance & OSINT (Nmap, Shodan, Google Dorking)",
+      "Exploitation Techniques (Metasploit, SQL Injection, XSS)"
     ],
-    application: "Network Traffic Analysis, Firewall Rule Configuration, Linux Hardening Lab"
+    application: "Network Traffic Analysis, Vulnerable Machine Hacking (HackTheBox)"
   },
   {
     id: "cy-phase-2",
     phase: "PHASE 2",
     duration: "WEEKS 5–8",
-    title: "Ethical Hacking & Penetration Testing",
+    title: "Cloud Security & SOC Operations",
     focusLabel: "CURRICULUM",
     focus: [
-      "Reconnaissance & OSINT (Nmap, Shodan, Google Dorking)",
-      "Exploitation Techniques (Metasploit, Buffer Overflow, SQL Injection, XSS)",
-      "Web Application Security (OWASP Top 10, Burp Suite, API Security)",
-      "Post-Exploitation, Privilege Escalation & Lateral Movement"
+      "Cloud Security & IAM (AWS IAM, Zero Trust Architecture)",
+      "Container Security & Compliance (Docker, ISO 27001, SOC2)",
+      "SOC Operations & SIEM (Splunk, ELK Stack, Threat Intelligence)",
+      "Incident Response & Digital Forensics"
     ],
-    application: "Vulnerable Machine Hacking (HackTheBox / TryHackMe), Web App Pen Test Report"
+    application: "Cloud Security Audit, Incident Response Playbook, SIEM Log Analysis"
   },
   {
     id: "cy-phase-3",
     phase: "PHASE 3",
     duration: "WEEKS 9–12",
-    title: "Cloud Security & Identity Management",
+    title: "Enterprise Capstone Projects",
     focusLabel: "CURRICULUM",
     focus: [
-      "Cloud Security Foundations (AWS IAM, Security Groups, CloudTrail)",
-      "Zero Trust Architecture & Identity Access Management (IAM)",
-      "Container Security (Docker, Kubernetes Security Benchmarks)",
-      "Compliance & Governance (ISO 27001, SOC2, GDPR, PCI DSS)"
+      "W9: Vulnerability Assessment & Penetration Testing",
+      "W10: Setting up a full SOC monitoring pipeline",
+      "W11: Securing Cloud Infrastructure Architecture",
+      "W12: Final Threat Assessment & Executive Reporting"
     ],
-    application: "Cloud Security Audit, IAM Policy Creation, Container Vulnerability Scan"
+    application: "Deliver a Portfolio-Ready Security Assessment & Threat Report"
   },
   {
     id: "cy-phase-4",
     phase: "PHASE 4",
     duration: "WEEKS 13–16",
-    title: "SOC Operations & Incident Response",
-    focusLabel: "CURRICULUM",
-    focus: [
-      "SOC Operations & SIEM (Splunk, ELK Stack, Threat Intelligence)",
-      "Incident Response & Digital Forensics (Evidence Collection, Triage)",
-      "Malware Analysis & Reverse Engineering Fundamentals",
-      "Threat Hunting & Threat Intelligence Platforms (TIP)"
-    ],
-    application: "SOC Simulation, Incident Response Playbook, SIEM Log Analysis"
-  },
-  {
-    id: "cy-phase-5",
-    phase: "PHASE 5",
-    duration: "WEEKS 17–20",
-    title: "Enterprise Capstone Project",
-    focusLabel: "CURRICULUM",
-    focus: [
-      "Industry Capstone Planning (Finance, Healthcare, E-commerce, etc.)",
-      "Comprehensive Penetration Testing on Cloud Infrastructure",
-      "Setting up a full SOC monitoring pipeline",
-      "Final Threat Assessment & Executive Reporting"
-    ],
-    application: "Deliver a Portfolio-Ready Security Assessment & Threat Report"
-  },
-  {
-    id: "cy-phase-6",
-    phase: "PHASE 6",
-    duration: "WEEKS 21–24",
     title: "Placement Preparation",
     focusLabel: "CURRICULUM",
     focus: [
       "Resume & LinkedIn Optimization for Cybersecurity Roles",
-      "Interview Prep (Security Concepts, Scenario Questions, CompTIA/CEH Aligned)",
+      "Interview Prep (Scenario Questions, CompTIA/CEH Aligned)",
       "Bug Bounty Program Introduction & CVE Report Writing",
       "Placement Acceleration (Recruiter Outreach, Mock Interviews, Referrals)"
     ],
@@ -191,7 +163,7 @@ const capstoneProjects = [
 ];
 
 const faqData = [
-  { q: "What is the duration of the program?", a: "The program runs for 24 weeks (6 months) consisting of 16 weeks of core technical training, 4 weeks of enterprise capstone projects, and 4 weeks of career branding & interview prep." },
+  { q: "What is the duration of the program?", a: "The program runs for 16 weeks (4 months) consisting of 12 weeks of core technical training and capstone projects, and 4 weeks of career branding & interview prep." },
   { q: "Who is this program designed for?", a: "Recent engineering or computer science graduates and working professionals (0–5 years of experience) looking to fast-track their development skills and break into elite SDE or AI roles." },
   { q: "What is the format of the classes?", a: "The program is 100% online with live mentor-led weekend masterclasses, weekly progress tracking, asynchronous lab assignments, and active Discord community support." },
   { q: "Will I get certified upon completion?", a: "Yes, you earn a professional-grade verifiable Software Engineering and AI Application Developer certification recognized by 500+ corporate hiring partners." },
@@ -273,7 +245,7 @@ const SoftwareDeveloper = () => {
               <span className="absolute w-2 h-2 rounded-full bg-[#e11d48] opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-[#e11d48]/40 animate-ping" />
             </div>
-            24-WEEK COMPREHENSIVE SDE PROGRAM
+            16-WEEK COMPREHENSIVE SDE PROGRAM
           </div>
 
           {/* Epic Metallic Typography */}
@@ -666,6 +638,45 @@ const SoftwareDeveloper = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="py-24 px-6 bg-[#020408] border-t border-white/5 relative overflow-hidden flex flex-col items-center text-center">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(225,29,72,0.1)_0%,transparent_70%)] pointer-events-none" />
+        <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase border border-white/10 bg-white/5 text-gray-300 mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#e11d48]" />
+            WHERE THE HUNGRY BUILD WHAT'S NEXT.
+          </div>
+          
+          <h2 className="text-3xl md:text-[48px] leading-[1.2] font-black text-white tracking-tight mb-6 sd-font-outfit max-w-4xl mx-auto">
+            Your Next Role Won't Come From More Applications.<br/>
+            <span className="text-[#e11d48]">It Will Come From Becoming Impossible to Ignore.</span>
+          </h2>
+          
+          <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-4xl mx-auto leading-relaxed">
+            Up to 10 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br/>
+            <span className="font-semibold mt-3 inline-block text-white">Built for professionals who refuse average.</span>
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
+            <div onClick={() => setShowPopup(true)} className="w-full sm:w-auto cursor-pointer">
+              <div className="px-8 py-4 text-[16px] rounded-xl bg-[#e11d48] hover:bg-[#be123c] text-white font-bold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(225,29,72,0.3)] w-full">
+                Apply Now &mdash; Free <ArrowRight size={18} />
+              </div>
+            </div>
+            <button
+              onClick={() => {}} 
+              className="px-8 py-4 text-[16px] font-bold rounded-xl border border-white/10 bg-[#161b22] text-white hover:bg-[#1f242c] transition-colors w-full sm:w-auto"
+            >
+              Download Brochure
+            </button>
+          </div>
+
+          <p className="text-[13px] text-gray-500 font-medium">
+            No application fee &bull; Limited to 60 seats per cohort &bull; Results in 48 hours
+          </p>
         </div>
       </section>
 

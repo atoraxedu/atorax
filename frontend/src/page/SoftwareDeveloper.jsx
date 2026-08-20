@@ -172,15 +172,16 @@ const softwarePhases = [
     id: "sd-phase-6",
     phase: "PHASE 6",
     duration: "WEEKS 21–24",
-    title: "System Design & Career Acceleration",
+    title: "Placement & Interview Preparation",
     focusLabel: "CURRICULUM",
     focus: [
-      "Advanced DSA (Top 150 Coding Problems, Mock Coding Interviews)",
-      "System Design (HLD/LLD: Scalability, SOLID, Case Studies: Netflix, Uber)",
-      "Product Engineering, Resume & LinkedIn Optimization",
-      "Placement Readiness (Mock Technical & HR Interviews, Networking, Salary Negotiation)"
+      "Advanced DSA (Top 150+ Coding Problems & Pattern Recognition)",
+      "System Design Interview Prep (HLD/LLD, SOLID, Real-world Case Studies)",
+      "10+ Mock Technical & HR Interviews with Industry Experts",
+      "Resume Building, GitHub & LinkedIn Profile Optimization",
+      "Salary Negotiation Strategies & Direct Placement Referrals"
     ],
-    application: "Interview readiness and positioning for top-tier SDE/AI engineering roles"
+    application: "Complete interview readiness and direct positioning for top-tier SDE/AI roles"
   }
 ];
 
@@ -669,6 +670,45 @@ const SoftwareDeveloper = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="py-24 px-6 bg-[#020408] border-t border-white/5 relative overflow-hidden flex flex-col items-center text-center">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.1)_0%,transparent_70%)] pointer-events-none" />
+        <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase border border-white/10 bg-white/5 text-gray-300 mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#6366f1]" />
+            WHERE THE HUNGRY BUILD WHAT'S NEXT.
+          </div>
+          
+          <h2 className="text-4xl md:text-[64px] leading-[1.1] font-black text-white tracking-tight mb-6 sd-font-outfit">
+            Your Next 15 Interviews Calls<br/>
+            <span className="text-[#818cf8]">Guaranteed.*</span>
+          </h2>
+          
+          <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+            Skip the endless applications. Get direct access to 500+ hiring partners<br/>
+            and accelerate your path to your next career opportunity.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
+            <div onClick={() => setShowPopup(true)} className="w-full sm:w-auto cursor-pointer">
+              <div className="px-8 py-4 text-[16px] rounded-xl bg-[#6366f1] hover:bg-[#4f46e5] text-white font-bold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] w-full">
+                Apply Now &mdash; Free <ArrowRight size={18} />
+              </div>
+            </div>
+            <button
+              onClick={() => {}} 
+              className="px-8 py-4 text-[16px] font-bold rounded-xl border border-white/10 bg-[#161b22] text-white hover:bg-[#1f242c] transition-colors w-full sm:w-auto"
+            >
+              Download Brochure
+            </button>
+          </div>
+
+          <p className="text-[13px] text-gray-500 font-medium">
+            No application fee &bull; Limited to 60 seats per cohort &bull; Results in 48 hours
+          </p>
         </div>
       </section>
 

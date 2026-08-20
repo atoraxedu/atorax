@@ -73,6 +73,9 @@ const domainCareerData = {
       { title: "AI Product Manager", avg: "₹20–38 LPA", highest: "₹65 LPA", tags: ["AI Roadmap", "GenAI Strategy", "LLMs"], growth: "Elite Track" },
       { title: "ML Ops / AI Platform Engineer", avg: "₹18–30 LPA", highest: "₹58 LPA", tags: ["Vector DBs", "Model Serving", "DevOps"], growth: "Growing Fast" },
       { title: "Agentic Systems Architect", avg: "₹28–50 LPA", highest: "₹80 LPA", tags: ["Multi-Agent", "RAG", "LangGraph"], growth: "Elite Track" },
+      { title: "LLM App Developer", avg: "₹14–25 LPA", highest: "₹45 LPA", tags: ["LangChain", "Next.js", "Vercel"], growth: "Booming" },
+      { title: "Fine-Tuning & NLP Engineer", avg: "₹15–28 LPA", highest: "₹50 LPA", tags: ["Hugging Face", "LoRA", "PyTorch"], growth: "High Demand" },
+      { title: "AI Data Architect", avg: "₹18–30 LPA", highest: "₹55 LPA", tags: ["Vector DBs", "ETL", "Knowledge Graphs"], growth: "Growing Fast" },
     ]
   },
   AIFullStack: {
