@@ -4,12 +4,12 @@ import logo3 from "../assets/LOGO3.png";
 import AdvancedApplyPopup from "./AdvancedApplyPopup";
 
 const topNav = [
-  { label: "All Programs", to: "/Advance" },
-  { label: "Software Development", to: "/SoftwareDeveloper" },
-  { label: "Agentic and GenAI", to: "/AgenticAndGenAI" },
-  { label: "Alumni", to: "/Alumni" },
-  { label: "Masterclass", to: "/MasterClass" },
-  { label: "Career Assessment", to: "/career-assessment" },
+  { label: "ALL PROGRAMS", to: "/Advance" },
+  { label: "SOFTWARE DEVELOPER", to: "/SoftwareDeveloper" },
+  { label: "AGENTIC AND GENAI", to: "/AgenticAndGenAI" },
+  { label: "ALUMNI", to: "/Alumni" },
+  { label: "MASTERCLASS", to: "/MasterClass" },
+  { label: "CAREER ASSESSMENT", to: "/career-assessment" },
 ];
 
 const Header = () => {
@@ -224,7 +224,7 @@ const Header = () => {
 
           <nav className="atx-nav">
             {topNav.map((item) => {
-              if (item.label === "Masterclass") {
+              if (item.to === "/MasterClass") {
                 return (
                   <Link key={item.to} to={item.to} className="atx-masterclass-btn">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
@@ -243,9 +243,9 @@ const Header = () => {
               );
             })}
             <div className="atx-nav-divider" />
-            <Link to="/login" className="atx-login-btn">Login</Link>
+            <Link to="/login" className="atx-login-btn">LOGIN</Link>
             <button onClick={() => setShowPopup(true)} className="atx-enroll-btn">
-              Request a Callback
+              REQUEST A CALLBACK
             </button>
           </nav>
 
