@@ -5,7 +5,7 @@ import axios from "axios";
 import API from "../API";
 import toast from "react-hot-toast";
 import { FaUser, FaPhone, FaEnvelope, FaBriefcase, FaGraduationCap, FaBullseye, FaCheckCircle, FaChevronDown } from "react-icons/fa";
-import atoraxLogo from "../assets/logowhite.png";
+import atoraxLogo from "../assets/atorax_logo_non_trans.png";
 import SubhraImg from "../assets/mentors/Subhra.jpg";
 import RudraImg from "../assets/mentors/rudra.jpg";
 import RohanImg from "../assets/alumni/alumni_1.png";
@@ -202,7 +202,7 @@ const AdvancedApplyPopup = ({ onClose, initialDomain = "", onSuccess, popupType 
                     
                     <div className="relative z-10">
                         <div className="mb-8 drop-shadow-2xl">
-                            <img src={atoraxLogo} alt="Atorax Logo" className="h-10 w-auto object-contain" />
+                            <img src={atoraxLogo} alt="Atorax Logo" className="h-[200px] w-auto object-contain -mt-16 -mb-12 -ml-4" />
                         </div>
                         <h2 className="text-3xl font-extrabold text-white leading-tight mb-4">
                             Your Path to <span className="text-emerald-500 underline decoration-emerald-500/30 underline-offset-4">Advanced</span> Success.

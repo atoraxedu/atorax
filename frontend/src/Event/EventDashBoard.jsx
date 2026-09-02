@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import { useNavigate } from "react-router-dom";
 import Profile from "./Profile";
 import Events from "./Events";

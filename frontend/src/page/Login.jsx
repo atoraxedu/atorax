@@ -4,7 +4,7 @@ import API from "../API";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { Eye, EyeOff, Mail, Lock, Smartphone } from "lucide-react";
-import atoraxLogo from "../assets/LOGO3.png";
+import atoraxLogo from "../assets/atorax_logo_non_trans.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -66,9 +66,9 @@ const Login = () => {
         
         {/* Logo Header */}
         <div className="flex flex-col items-center mb-8">
-          <Link to="/" className="inline-block p-4 bg-white rounded-2xl shadow-lg shadow-indigo-900/10 mb-6 hover:-translate-y-1 transition-transform">
-            <img src={atoraxLogo} alt="Atorax Logo" className="h-10 w-auto object-contain" />
-          </Link>
+          {/* <Link to="/" className="inline-block p-4 bg-white rounded-2xl shadow-lg shadow-indigo-900/10 mb-6 hover:-translate-y-1 transition-transform"> */}
+            <img src={atoraxLogo} alt="Atorax Logo" className="h-[200px] w-auto object-contain -mt-16 -mb-12 -ml-4" />
+          {/* </Link> */}
           <h2 className="text-3xl font-black text-white tracking-tight mb-2">Welcome Back</h2>
           <p className="text-indigo-100 font-medium">Sign in to your Atorax dashboard.</p>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/LOGO3.png';
+import logo from '../assets/atorax_logo_non_trans.png';
 import quiz from '../assets/quiz.jpg';
 
 import toast, { Toaster } from 'react-hot-toast';

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate  } from "react-router-dom";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import toast ,{Toaster} from 'react-hot-toast';
 
 const PCHeader = () => {

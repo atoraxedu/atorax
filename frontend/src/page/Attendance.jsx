@@ -7,7 +7,7 @@ import {
   LogOut, Calendar, Navigation, ShieldCheck, Mail, Lock, ArrowRight,
   User, Activity, ChevronLeft, ChevronRight, Check
 } from "lucide-react";
-import Logo from "../assets/LOGO3.png";
+import Logo from "../assets/atorax_logo_non_trans.png";
 
 const StatCard = ({ icon, label, value, color, bgColor, subLabel }) => (
   <div className="bg-white p-6 rounded-[24px] shadow-sm border border-slate-100 flex flex-col relative overflow-hidden transition-all hover:shadow-md hover:-translate-y-1 group">

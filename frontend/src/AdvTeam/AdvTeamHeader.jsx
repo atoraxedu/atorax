@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import axios from "axios";
 import API from "../API";
 import toast, { Toaster } from "react-hot-toast";
@@ -166,7 +166,7 @@ const AdvTeamHeader = () => {
       <div className="navbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 32px', background: '#0A0F1C', borderBottom: '1px solid rgba(255,255,255,0.05)', width: '100%', height: '70px', position: 'fixed', top: 0, left: 0, zIndex: 1100 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={logo} alt="Logo" style={{ height: '35px', objectFit: 'contain', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
+            <img src={logo} alt="Logo" style={{ height: '100px', marginTop: '-65px', marginBottom: '-65px', objectFit: 'contain', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
           </Link>
           <div style={{ width: '1px', height: '24px', background: 'rgba(255,255,255,0.1)' }}></div>
           <span style={{ color: 'rgba(129, 140, 248, 0.8)', fontSize: '12px', fontWeight: '900', letterSpacing: '0.2em', textTransform: 'uppercase', background: 'rgba(99, 102, 241, 0.1)', padding: '4px 10px', borderRadius: '6px', border: '1px solid rgba(99, 102, 241, 0.2)' }}>Team Portal</span>

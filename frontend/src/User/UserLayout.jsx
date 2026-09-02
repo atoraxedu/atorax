@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import UserSidebar from "./UserSidebar";
 import axios from "axios";
 import API from "../API";

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import API from "../API";
 import axios from "axios";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import toast, { Toaster } from 'react-hot-toast';
 
 // --- Premium SVG Icons ---
@@ -95,7 +95,7 @@ const OperationHeader = () => {
       }}>
         <div>
           <Link to="/">
-            <img src={logo} alt="Logo" style={{ height: '40px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }} />
+            <img src={logo} alt="Logo" style={{ height: '100px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }} />
           </Link>
         </div>
         <div ref={mobileMenuRef}>

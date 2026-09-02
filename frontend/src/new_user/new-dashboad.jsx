@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import API from "../API";
 import toast, { Toaster } from "react-hot-toast";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import "./new-dashboad.css";
 
 /* ─── localStorage progress helper ─── */

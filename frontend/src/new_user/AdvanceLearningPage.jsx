@@ -8,7 +8,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import AdvanceLearning from "../User/AdvanceLearning";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 
 const AdvanceLearningPage = () => {
     const navigate = useNavigate();

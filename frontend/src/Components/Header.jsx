@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo3 from "../assets/LOGO3.png";
+import logo3 from "../assets/atorax_logo_non_trans.png";
 import AdvancedApplyPopup from "./AdvancedApplyPopup";
 
 const topNav = [
@@ -47,13 +47,15 @@ const Header = () => {
           position: sticky;
           top: 0;
           z-index: 100;
-          background: #0F1115;
-          border-bottom: 1px solid rgba(255,255,255,0.07);
+          background: rgba(24, 34, 49, 0.90); /* #182231 */
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-bottom: 1px solid #2B3A4D;
           transition: box-shadow 0.2s;
           font-family: 'Inter', sans-serif;
         }
         .atx-header.scrolled {
-          box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4);
         }
         .atx-header-inner {
           max-width: 1440px; /* Increased to allow more room for links */
@@ -62,7 +64,7 @@ const Header = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          height: 64px;
+          height: 72px;
           gap: 16px;
         }
         .atx-logo {
@@ -73,9 +75,11 @@ const Header = () => {
           flex-shrink: 0; /* Prevents logo from crushing */
         }
         .atx-logo img {
-          height: 38px;
+          height: 200px;
           width: auto;
           object-fit: contain;
+          margin: -64px 0;
+          transform: translateY(-12px);
         }
         .atx-nav {
           display: flex;
@@ -83,7 +87,7 @@ const Header = () => {
           gap: 2px; /* Reduced gap */
         }
         .atx-nav-link {
-          color: rgba(255,255,255,0.65);
+          color: #F8FAFC;
           font-size: 14px;
           font-weight: 500;
           padding: 7px 10px; /* Reduced horizontal padding */
@@ -93,12 +97,12 @@ const Header = () => {
           white-space: nowrap;
         }
         .atx-nav-link:hover {
-          color: #fff;
-          background: rgba(255,255,255,0.06);
+          color: #2DD4BF;
+          background: rgba(45, 212, 191, 0.1);
         }
         .atx-nav-link.active {
-          color: #fff;
-          background: rgba(255,255,255,0.08);
+          color: #2DD4BF;
+          background: rgba(45, 212, 191, 0.15);
         }
         .atx-masterclass-btn {
           display: flex;
@@ -108,28 +112,28 @@ const Header = () => {
           font-weight: 600;
           padding: 6px 10px;
           border-radius: 6px;
-          background: rgba(255,255,255,0.07);
-          color: rgba(255,255,255,0.8);
+          background: transparent;
+          color: #F8FAFC;
           text-decoration: none;
           letter-spacing: 0.05em;
           text-transform: uppercase;
           transition: background 0.18s, color 0.18s;
-          border: 1px solid rgba(255,255,255,0.1);
+          border: 1px solid rgba(255,255,255,0.2);
           white-space: nowrap;
         }
         .atx-masterclass-btn:hover {
-          background: rgba(255,255,255,0.12);
-          color: #fff;
+          background: rgba(45, 212, 191, 0.1);
+          color: #2DD4BF;
         }
         .atx-nav-divider {
           width: 1px;
           height: 20px;
-          background: rgba(255,255,255,0.1);
+          background: rgba(255,255,255,0.2);
           margin: 0 6px;
           flex-shrink: 0;
         }
         .atx-login-btn {
-          color: rgba(255,255,255,0.65);
+          color: #F8FAFC;
           font-size: 14px;
           font-weight: 500;
           padding: 7px 12px;
@@ -139,10 +143,10 @@ const Header = () => {
           white-space: nowrap;
         }
         .atx-login-btn:hover {
-          color: #fff;
+          color: #2DD4BF;
         }
         .atx-enroll-btn {
-          background: #1462EE;
+          background: #009E82;
           color: #fff;
           font-size: 14px;
           font-weight: 600;
@@ -152,31 +156,33 @@ const Header = () => {
           cursor: pointer;
           transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
           white-space: nowrap;
-          box-shadow: 0 2px 12px rgba(20,98,238,0.25);
+          box-shadow: 0 2px 12px rgba(0,158,130,0.25);
           flex-shrink: 0;
         }
         .atx-enroll-btn:hover {
-          background: #0D4FC0;
+          background: #00B894;
           transform: translateY(-1px);
-          box-shadow: 0 6px 20px rgba(20,98,238,0.35);
+          box-shadow: 0 6px 20px rgba(0,184,148,0.35);
         }
         .atx-hamburger {
           display: none;
           background: none;
-          border: 1px solid rgba(255,255,255,0.15);
+          border: 1px solid rgba(255,255,255,0.2);
           border-radius: 6px;
-          color: #fff;
+          color: #F8FAFC;
           padding: 8px 12px;
           font-size: 18px;
           cursor: pointer;
           transition: border-color 0.18s;
         }
         .atx-hamburger:hover {
-          border-color: rgba(255,255,255,0.4);
+          border-color: #F8FAFC;
         }
         .atx-mobile-menu {
-          background: #0F1115;
-          border-top: 1px solid rgba(255,255,255,0.07);
+          background: rgba(24, 34, 49, 0.98); /* #182231 */
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-top: 1px solid #2B3A4D;
           padding: 12px 20px 16px;
         }
         .atx-mobile-menu a, .atx-mobile-menu button {
@@ -187,27 +193,27 @@ const Header = () => {
           border-radius: 6px;
           font-size: 14px;
           font-weight: 500;
-          color: rgba(255,255,255,0.65);
+          color: #F8FAFC;
           text-decoration: none;
           transition: color 0.15s, background 0.15s;
           margin-bottom: 4px;
         }
         .atx-mobile-menu a:hover, .atx-mobile-menu button:hover {
-          color: #fff;
-          background: rgba(255,255,255,0.06);
+          color: #2DD4BF;
+          background: rgba(45, 212, 191, 0.1);
         }
         .atx-mobile-menu .mob-enroll {
-          background: #1462EE;
+          background: #009E82;
           color: #fff;
           text-align: center;
           font-weight: 600;
           margin-top: 8px;
           border: none;
           cursor: pointer;
-          box-shadow: 0 2px 12px rgba(20,98,238,0.25);
+          box-shadow: 0 2px 12px rgba(0,158,130,0.25);
         }
         .atx-mobile-menu .mob-enroll:hover {
-          background: #0D4FC0;
+          background: #00B894;
         }
         @media (max-width: 1350px) {
           .atx-nav { display: none; }
@@ -217,9 +223,9 @@ const Header = () => {
 
       <header className={`atx-header${scrolled ? " scrolled" : ""}`}>
         <div ref={menuRef} className="atx-header-inner">
-          <Link to="/" className="atx-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+          <Link to="/" className="atx-logo" style={{ display: 'flex', alignItems: 'center', gap: '4px', textDecoration: 'none' }}>
             <img src={logo3} alt="Atorax logo" />
-            <span style={{ color: '#ffffff', fontSize: '18px', fontWeight: '800', letterSpacing: '1.5px' }}>ATORAX</span>
+            {/* <span style={{ color: '#F8FAFC', fontSize: '18px', fontWeight: '800', letterSpacing: '1.5px' }}>ATORAX</span> */}
           </Link>
 
           <nav className="atx-nav">

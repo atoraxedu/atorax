@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import API from "../API";
 import debounce from "lodash/debounce";
 import toast, { Toaster } from "react-hot-toast";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 
 const NewDashboard = () => {
   const userEmail = localStorage.getItem("userEmail");

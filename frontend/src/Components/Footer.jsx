@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/LOGO3.png";
+import logo from "../assets/atorax_logo_non_trans.png";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaLinkedinIn, FaInstagram, FaTwitter, FaArrowRight, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
@@ -47,10 +47,10 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="lg:col-span-4">
             <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
-              <div className="bg-white/5 p-2 rounded-xl border border-white/10 group-hover:border-white/20 transition-colors">
-                <img src={logo} alt="Atorax" className="h-8 w-auto object-contain" />
-              </div>
-              <span className="text-2xl font-black tracking-widest text-white">ATORAX</span>
+              {/* <div className="bg-white/5 p-2 rounded-xl border border-white/10 group-hover:border-white/20 transition-colors"> */}
+                <img src={logo} alt="Atorax" className="h-20 w-auto object-contain" />
+              {/* </div> */}
+              {/* <span className="text-2xl font-black tracking-widest text-white">ATORAX</span> */}
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
               Empowering the next generation of engineers with structured learning, expert mentorship, and measured career outcomes. Build the future with Atorax.
