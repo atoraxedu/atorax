@@ -33,7 +33,7 @@ import careerPath2 from "../assets/career_path_6_10.png";
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "16 Weeks", label: "Duration" },
- { value: "20 Interviews",label:"Interview Call Opportunities Guaranteed" },
+  { value: "20 Interviews", label: "Interview Call Opportunities Guaranteed" },
   { value: "10+ Projects", label: "Hands-on Practice" },
   // { value: "1 Capstone", label: "Real Projects" },
   { value: "GenAI", label: "Core Focus" },
@@ -660,7 +660,7 @@ const DataScience = () => {
           </h2>
 
           <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-4xl mx-auto leading-relaxed">
-            Up to 10 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br />
+            Up to 20 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br />
             <span className="font-semibold mt-3 inline-block text-white">Built for professionals who refuse average.</span>
           </p>
 

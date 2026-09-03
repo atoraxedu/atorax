@@ -56,7 +56,7 @@ const trustStats = [
   // { value: "20", label: "Interview Opportunities" },
   { value: "120+ Hours", label: "Hands-on Practice" },
   { value: "6 Capstones", label: "Real Projects" },
- { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
+  { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
 ];
 
 const careerPaths = [
@@ -685,7 +685,7 @@ const SoftwareDeveloper = () => {
           </div>
 
           <h2 className="text-4xl md:text-[64px] leading-[1.1] font-black text-white tracking-tight mb-6 sd-font-outfit">
-            Your Next 15 Interviews Calls<br />
+            Your Next 30 Interviews Calls<br />
             <span className="text-[#818cf8]">Guaranteed.*</span>
           </h2>
 
