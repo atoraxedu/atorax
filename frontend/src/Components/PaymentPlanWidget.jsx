@@ -31,13 +31,13 @@ const PaymentPlanWidget = ({ basePrice, courseName, durationMonths = 6, themeCol
       bg: 'rgba(16,185,129,0.12)',
       color: '#34d399',
     },
-    {
-      icon: Percent,
-      label: 'EMI / Loan',
-      sub: 'Low interest',
-      bg: 'rgba(245,158,11,0.12)',
-      color: '#fbbf24',
-    },
+    // {
+    //   icon: Percent,
+    //   label: 'EMI / Loan',
+    //   sub: 'Low interest',
+    //   bg: 'rgba(245,158,11,0.12)',
+    //   color: '#fbbf24',
+    // },
   ];
 
   return (
@@ -96,16 +96,16 @@ const PaymentPlanWidget = ({ basePrice, courseName, durationMonths = 6, themeCol
                   <span className="text-5xl font-black text-white tracking-tight leading-none">
                     {formatCurrency(basePrice)}
                   </span>
-                  <div className="mb-1">
+                  {/* <div className="mb-1">
                     <p className="text-[10px] text-slate-500 font-semibold m-0">EMI from</p>
                     <p className="text-2xl font-black leading-none" style={{ color: themeColor }}>
                       {formatCurrency(startingEMI)}<span className="text-sm font-semibold text-slate-400">/mo</span>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="flex items-center gap-2 mt-4 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
                   <span className="w-1.5 h-1.5 rounded-full bg-slate-500 shrink-0" />
-                  <p className="text-[11px] text-slate-500 font-medium m-0">Exclusive of 18% GST &nbsp;·&nbsp; Up to 24-month EMI</p>
+                  <p className="text-[11px] text-slate-500 font-medium m-0">Exclusive of 18% GST </p>
                 </div>
               </div>
 
@@ -132,7 +132,7 @@ const PaymentPlanWidget = ({ basePrice, courseName, durationMonths = 6, themeCol
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.25em] text-slate-500 mb-4">
                   Choose Payment Mode
                 </p>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-2 gap-3">
                   {paymentModes.map(({ icon: Icon, label, sub, bg, color }, i) => (
                     <button
                       key={i}

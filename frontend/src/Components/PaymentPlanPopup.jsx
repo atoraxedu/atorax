@@ -10,7 +10,7 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
 
   if (!isOpen) return null;
 
-  const GST = 0.18;
+  const GST = 0;
   const bookingBase = 10000;
   const bookingTotal = bookingBase * (1 + GST);
 
@@ -39,7 +39,7 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
   const tabs = [
     { id: 'upfront', label: 'Full Payment', sub: 'Best value', icon: CreditCard, color: '#6366f1' },
     { id: 'installments', label: 'Installments', sub: 'Split across months', icon: Layers, color: '#10b981' },
-    { id: 'finance', label: 'EMI / Finance', sub: '0% interest options', icon: Percent, color: '#f59e0b' },
+    // { id: 'finance', label: 'EMI / Loan', sub: 'Low interest', icon: Percent, color: '#f59e0b' },
   ];
 
   const activeTabData = tabs.find((t) => t.id === activeTab);
@@ -54,7 +54,7 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
       : activeTab === 'installments'
       ? [
           { step: '1', label: 'Booking Fee (Now)', amount: bookingTotal, base: bookingBase },
-          { step: '2', label: `Monthly Instalment × ${durationMonths + 1}`, amount: instTotal, base: instBase, tag: `${durationMonths + 1} × months` },
+          { step: '2', label: 'Registration Fee (Within 7 days)', amount: upfrontRegTotal, base: upfrontRegBase },
         ]
       : [
           { step: '1', label: 'Booking Fee (Now)', amount: bookingTotal, base: bookingBase },
@@ -105,7 +105,6 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
             <div className="mt-3 flex items-baseline gap-1.5">
               <span className="text-3xl font-black text-white">{fmt(grandTotal)}</span>
             </div>
-            <p className="text-[11px] text-slate-500 mt-1 font-medium">incl. 18% GST</p>
           </div>
 
           {/* Tab buttons */}
@@ -200,7 +199,6 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
                     </div>
                     <div className="text-right shrink-0">
                       <p className="text-xl font-black text-white m-0">{fmt(row.amount)}</p>
-                      <p className="text-[10px] text-slate-500 m-0 mt-0.5 font-medium">{fmt(row.base)} + GST</p>
                     </div>
                   </div>
                 ))}
@@ -215,7 +213,6 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
                   <p className="text-[10px] font-extrabold uppercase tracking-[0.2em] m-0 mb-1" style={{ color: activeTabData.color }}>
                     Total Programme Fee
                   </p>
-                  <p className="text-[11px] text-slate-400 m-0 font-medium">Base {fmt(totalBase)} + 18% GST</p>
                 </div>
                 <p className="text-4xl font-black text-white m-0">{fmt(grandTotal)}</p>
               </div>
@@ -255,7 +252,6 @@ const PaymentPlanPopup = ({ isOpen, onClose, basePrice, courseName, durationMont
                   {[
                     'Booking fee payable immediately upon selection confirmation.',
                     'Registration fee due within 7 days or 2 days before batch start.',
-                    activeTab === 'installments' && `Balance split across ${durationMonths + 1} equal monthly installments.`,
                     activeTab === 'finance' && '0% interest EMI via partner banks & NBFCs.',
                     'Terms & Conditions apply.',
                   ]
