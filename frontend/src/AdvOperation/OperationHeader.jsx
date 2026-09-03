@@ -95,7 +95,7 @@ const OperationHeader = () => {
       }}>
         <div>
           <Link to="/">
-            <img src={logo} alt="Logo" style={{ height: '100px', objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }} />
+            <img src={logo} alt="Logo" className="header-logo" style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.2))' }} />
           </Link>
         </div>
         <div ref={mobileMenuRef}>
@@ -172,6 +172,18 @@ const OperationHeader = () => {
           background: rgba(239, 68, 68, 0.2) !important;
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+        }
+        .header-logo {
+          height: 100px;
+        }
+        @media (max-width: 768px) {
+          .header-logo {
+            height: 45px;
+            margin-left: -10px;
+          }
+          .premium-navbar {
+            padding: 0 16px !important;
+          }
         }
       `}</style>
     </div>

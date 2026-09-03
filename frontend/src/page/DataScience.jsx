@@ -33,9 +33,9 @@ import careerPath2 from "../assets/career_path_6_10.png";
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "16 Weeks", label: "Duration" },
-  { value: "10 Interviews", label: "Interview Opportunities" },
+ { value: "20 Interviews",label:"Interview Call Opportunities Guaranteed" },
   { value: "10+ Projects", label: "Hands-on Practice" },
-  { value: "1 Capstone", label: "Real Projects" },
+  // { value: "1 Capstone", label: "Real Projects" },
   { value: "GenAI", label: "Core Focus" },
 ];
 
@@ -165,6 +165,9 @@ const faqData = [
   { q: "Will I get certified?", a: "Yes. You earn 4 Professional Certifications including Data Science, Machine Learning, Generative AI, and Capstone Project." },
   { q: "Do you provide placement support?", a: "Yes, Phase 3 is entirely dedicated to Resume Mastery, Interview Prep, Case Studies, and Placement Support." },
   { q: "What kind of projects will I build?", a: "You will build 10+ hands-on projects, ranging from Sales Dashboards and Churn Prediction to a full Custom AI Chatbot using LLMs." },
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DataScience = () => {
@@ -202,7 +205,7 @@ const DataScience = () => {
           1. HERO
           ============================================================ */}
       <section id="overview" className="relative min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-24 px-6 overflow-hidden bg-[#020408]">
-        
+
         {/* 1. Full-Bleed Immersive Background */}
         <div className="absolute inset-0 z-0">
           {heroImages.map((img, idx) => (
@@ -213,16 +216,16 @@ const DataScience = () => {
               className={`absolute inset-0 w-full h-full object-cover mix-blend-screen transition-opacity duration-[2000ms] ease-in-out ${heroImageIdx === idx ? "opacity-50" : "opacity-0"}`}
             />
           ))}
-          
+
           {/* Deep Vignette Mask */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(2,4,8,0.3)_0%,rgba(2,4,8,0.95)_100%)] pointer-events-none" />
-          
+
           {/* Intense Floating Orbs for 3D Depth (Gold Theme) */}
-          <div 
-            className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-[#eab308]/20 blur-[130px] rounded-full pointer-events-none mix-blend-screen animate-pulse" 
+          <div
+            className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-[#eab308]/20 blur-[130px] rounded-full pointer-events-none mix-blend-screen animate-pulse"
           />
-          <div 
-            className="absolute bottom-[10%] right-[15%] w-[600px] h-[600px] bg-[#f59e0b]/10 blur-[150px] rounded-full pointer-events-none mix-blend-screen animate-pulse" 
+          <div
+            className="absolute bottom-[10%] right-[15%] w-[600px] h-[600px] bg-[#f59e0b]/10 blur-[150px] rounded-full pointer-events-none mix-blend-screen animate-pulse"
             style={{ animationDelay: '1s' }}
           />
         </div>
@@ -265,7 +268,7 @@ const DataScience = () => {
           {/* Hyper-Premium Interactive Elements */}
           <div className="flex flex-col items-center gap-12 px-4">
             <div className="flex flex-wrap justify-center gap-6">
-              
+
               {/* Spinning Conic Gradient Button */}
               <div className="relative group rounded-full p-[2px] overflow-hidden shadow-[0_0_40px_rgba(234,179,8,0.4)] hover:shadow-[0_0_60px_rgba(234,179,8,0.7)] transition-shadow duration-500">
                 <div className="absolute inset-0 bg-[conic-gradient(from_0deg,transparent_0_240deg,rgba(234,179,8,1)_360deg)] animate-[spin_3s_linear_infinite] opacity-100" />
@@ -287,52 +290,52 @@ const DataScience = () => {
                 View Curriculum
               </button>
             </div>
-            
+
             {/* Gold Placement Banner */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
               className="mt-10 mx-auto w-fit bg-[#241a04] rounded-[16px] py-3 px-8 md:px-14 flex flex-col md:flex-row items-center gap-8 md:gap-20 shadow-2xl border border-[#4d3306]"
             >
-               {/* Placements */}
-               <div className="flex items-center gap-3 text-left">
-                  <div className="w-10 h-10 rounded-lg bg-[#a16207] flex items-center justify-center shadow-inner shrink-0">
-                     <Briefcase className="text-white" size={18} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                     <p className="text-yellow-100/70 text-[10px] font-bold mb-0.5">Placements</p>
-                     <p className="text-white text-[20px] font-bold leading-none">1100+</p>
-                  </div>
-               </div>
+              {/* Placements */}
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#a16207] flex items-center justify-center shadow-inner shrink-0">
+                  <Briefcase className="text-white" size={18} strokeWidth={2.5} />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-yellow-100/70 text-[10px] font-bold mb-0.5">Placements</p>
+                  <p className="text-white text-[20px] font-bold leading-none">1100+</p>
+                </div>
+              </div>
 
-               {/* Separator */}
-               <div className="hidden md:block w-px h-10 bg-white/10"></div>
+              {/* Separator */}
+              <div className="hidden md:block w-px h-10 bg-white/10"></div>
 
-               {/* Salary Hike */}
-               <div className="flex items-center gap-3 text-left">
-                  <div className="w-10 h-10 rounded-lg bg-[#a16207] flex items-center justify-center shadow-inner shrink-0">
-                     <TrendingUp className="text-white" size={18} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                     <p className="text-yellow-100/70 text-[10px] font-bold mb-0.5">Salary Hike</p>
-                     <p className="text-white text-[18px] font-bold leading-[1.1]">Upto <br/> 350%</p>
-                  </div>
-               </div>
+              {/* Salary Hike */}
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#a16207] flex items-center justify-center shadow-inner shrink-0">
+                  <TrendingUp className="text-white" size={18} strokeWidth={2.5} />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-yellow-100/70 text-[10px] font-bold mb-0.5">Salary Hike</p>
+                  <p className="text-white text-[18px] font-bold leading-[1.1]">Upto <br /> 350%</p>
+                </div>
+              </div>
 
-               {/* Separator */}
-               <div className="hidden md:block w-px h-10 bg-white/10"></div>
+              {/* Separator */}
+              <div className="hidden md:block w-px h-10 bg-white/10"></div>
 
-               {/* ROI */}
-               <div className="flex items-center gap-3 text-left">
-                  <div className="w-10 h-10 rounded-lg bg-[#a16207] flex items-center justify-center shadow-inner shrink-0">
-                     <Landmark className="text-white" size={18} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                     <p className="text-yellow-100/70 text-[10px] font-bold mb-0.5">ROI on Course</p>
-                     <p className="text-white text-[20px] font-bold leading-none">10x to 20X</p>
-                  </div>
-               </div>
+              {/* ROI */}
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-10 h-10 rounded-lg bg-[#a16207] flex items-center justify-center shadow-inner shrink-0">
+                  <Landmark className="text-white" size={18} strokeWidth={2.5} />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-yellow-100/70 text-[10px] font-bold mb-0.5">ROI on Course</p>
+                  <p className="text-white text-[20px] font-bold leading-none">10x to 20X</p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -340,7 +343,7 @@ const DataScience = () => {
 
       {/* STATS BAR */}
       <ProgramStatsBar stats={trustStats} labelColor="text-[#eab308]" />
-      
+
       {/* COLLABORATION COMPANY MARQUEE */}
       <AuthorityMarquee theme="dark" />
 
@@ -374,7 +377,7 @@ const DataScience = () => {
             />
           </div>
 
-          <div 
+          <div
             className="grid grid-cols-1 lg:grid-cols-2 gap-8"
             onMouseEnter={() => setIsCareerPathHovered(true)}
             onMouseLeave={() => setIsCareerPathHovered(false)}
@@ -386,9 +389,8 @@ const DataScience = () => {
                 return (
                   <div
                     key={idx}
-                    className={`border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer ${
-                      isActive ? "border-white/20 bg-white/[0.04]" : "border-white/5 bg-[#0A0A0A] hover:border-white/10"
-                    }`}
+                    className={`border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer ${isActive ? "border-white/20 bg-white/[0.04]" : "border-white/5 bg-[#0A0A0A] hover:border-white/10"
+                      }`}
                     onClick={() => setActiveCareerPath(idx)}
                   >
                     <div className="p-6">
@@ -403,7 +405,7 @@ const DataScience = () => {
                       </div>
                       <h3 className="text-lg font-bold text-white">{path.title}</h3>
 
-                      <div 
+                      <div
                         className={`transition-all duration-500 ease-in-out overflow-hidden`}
                         style={{ maxHeight: isActive ? '500px' : '0px', opacity: isActive ? 1 : 0 }}
                       >
@@ -451,10 +453,10 @@ const DataScience = () => {
       </section>
 
       {/* CURRICULUM */}
-      <PremiumCurriculum 
-        phases={dsPhases} 
-        title="16-Week Data Roadmap" 
-        accentColor="text-[#eab308]" 
+      <PremiumCurriculum
+        phases={dsPhases}
+        title="16-Week Data Roadmap"
+        accentColor="text-[#eab308]"
         bgColor="bg-[#020408]"
         cardBgColor="bg-[#0B1014]"
       />
@@ -480,51 +482,51 @@ const DataScience = () => {
                 className="glass-panel rounded-[28px] p-8 relative overflow-hidden group cursor-pointer border border-white/5 hover:border-[#eab308]/30 transition-all duration-500 min-h-[380px] flex flex-col"
                 onClick={() => setShowPopup(true)}
               >
-                 {/* Faded Background Image */}
-                 <div 
-                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-10 group-hover:opacity-30 mix-blend-luminosity transition-all duration-700 group-hover:scale-105"
-                    style={{ backgroundImage: `url(${heroImages[i % heroImages.length]})` }}
-                 ></div>
-                 {/* Gradient overlay */}
-                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0B] via-[#0A0A0B]/60 to-transparent z-0 pointer-events-none"></div>
-                 
-                 <div className="relative z-10 flex flex-col h-full">
-                    <div className="flex justify-between items-start mb-8">
-                       <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-zinc-900 border border-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.05)] group-hover:scale-110 transition-transform duration-500">
-                          {React.createElement(project.icon, {
-                            size: 24,
-                            className: "text-gray-400 group-hover:text-[#eab308] transition-colors duration-500",
-                            strokeWidth: 1.5,
-                          })}
-                       </div>
-                       <span className="text-[11px] font-bold text-[#eab308] bg-[#eab308]/10 px-3 py-1.5 rounded-full border border-[#eab308]/20 backdrop-blur-md">Data Project</span>
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-white mb-4 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[#eab308] transition-colors">
-                       {project.title}
-                    </h3>
-                    
-                    <p className="text-zinc-400 text-sm leading-relaxed mb-8 flex-grow">
-                       {project.desc}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-8 mt-auto">
-                       {project.tools.slice(0,3).map(t => (
-                          <span key={t} className="text-[10px] font-semibold bg-white/5 border border-white/5 text-zinc-300 px-3 py-1.5 rounded-lg">
-                             {t}
-                          </span>
-                       ))}
-                       {project.tools.length > 3 && (
-                          <span className="text-[10px] font-semibold bg-white/5 border border-white/5 text-zinc-400 px-3 py-1.5 rounded-lg">
-                             +{project.tools.length - 3}
-                          </span>
-                       )}
-                    </div>
+                {/* Faded Background Image */}
+                <div
+                  className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-10 group-hover:opacity-30 mix-blend-luminosity transition-all duration-700 group-hover:scale-105"
+                  style={{ backgroundImage: `url(${heroImages[i % heroImages.length]})` }}
+                ></div>
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0B] via-[#0A0A0B]/60 to-transparent z-0 pointer-events-none"></div>
 
-                    <div className="flex items-center text-sm font-bold text-white group-hover:translate-x-2 transition-transform duration-300 pt-4 border-t border-white/5">
-                       View Project Details <ArrowRight size={16} className="ml-2 text-zinc-400 group-hover:text-white transition-colors" />
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex justify-between items-start mb-8">
+                    <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-zinc-900 border border-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.05)] group-hover:scale-110 transition-transform duration-500">
+                      {React.createElement(project.icon, {
+                        size: 24,
+                        className: "text-gray-400 group-hover:text-[#eab308] transition-colors duration-500",
+                        strokeWidth: 1.5,
+                      })}
                     </div>
-                 </div>
+                    <span className="text-[11px] font-bold text-[#eab308] bg-[#eab308]/10 px-3 py-1.5 rounded-full border border-[#eab308]/20 backdrop-blur-md">Data Project</span>
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-white mb-4 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[#eab308] transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-zinc-400 text-sm leading-relaxed mb-8 flex-grow">
+                    {project.desc}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                    {project.tools.slice(0, 3).map(t => (
+                      <span key={t} className="text-[10px] font-semibold bg-white/5 border border-white/5 text-zinc-300 px-3 py-1.5 rounded-lg">
+                        {t}
+                      </span>
+                    ))}
+                    {project.tools.length > 3 && (
+                      <span className="text-[10px] font-semibold bg-white/5 border border-white/5 text-zinc-400 px-3 py-1.5 rounded-lg">
+                        +{project.tools.length - 3}
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="flex items-center text-sm font-bold text-white group-hover:translate-x-2 transition-transform duration-300 pt-4 border-t border-white/5">
+                    View Project Details <ArrowRight size={16} className="ml-2 text-zinc-400 group-hover:text-white transition-colors" />
+                  </div>
+                </div>
               </div>
             ))}
 
@@ -534,7 +536,7 @@ const DataScience = () => {
                 <Layers size={28} className="text-[#eab308]" />
               </div>
               <h3 className="text-3xl font-black text-white mb-4 leading-tight ag-font-outfit">
-                More projects<br/>waiting for you
+                More projects<br />waiting for you
               </h3>
               <p className="text-gray-400 text-[15px] mb-8 max-w-[240px] leading-relaxed">
                 Build a portfolio that proves your expertise and gets you hired.
@@ -557,7 +559,7 @@ const DataScience = () => {
         </div>
       </section>
 
-      
+
       {/* TOOLS & TECHNOLOGIES */}
       <section id="tools" className="py-24 px-6 bg-[#050505] border-t border-white/5">
         <div className="max-w-6xl mx-auto">
@@ -651,14 +653,14 @@ const DataScience = () => {
             <span className="w-2 h-2 rounded-full bg-[#eab308]" />
             WHERE THE HUNGRY BUILD WHAT'S NEXT.
           </div>
-          
+
           <h2 className="text-3xl md:text-[48px] leading-[1.2] font-black text-white tracking-tight mb-6 ag-font-outfit max-w-4xl mx-auto">
-            Your Next Role Won't Come From More Applications.<br/>
+            Your Next Role Won't Come From More Applications.<br />
             <span className="text-[#eab308]">It Will Come From Becoming Impossible to Ignore.</span>
           </h2>
-          
+
           <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-4xl mx-auto leading-relaxed">
-            Up to 10 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br/>
+            Up to 10 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br />
             <span className="font-semibold mt-3 inline-block text-white">Built for professionals who refuse average.</span>
           </p>
 
@@ -669,7 +671,7 @@ const DataScience = () => {
               </div>
             </div>
             <button
-              onClick={() => {}} 
+              onClick={() => { }}
               className="px-8 py-4 text-[16px] font-bold rounded-xl border border-white/10 bg-[#161b22] text-white hover:bg-[#1f242c] transition-colors w-full sm:w-auto"
             >
               Download Brochure

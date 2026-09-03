@@ -18,7 +18,7 @@ import MarketLeaders from "../Components/MarketLeaders";
 import MeetYourMentors from "../Components/MeetYourMentors";
 import AuthorityMarquee from "../Components/AuthorityMarquee";
 import FloatingNav from "../Components/FloatingNav";
-import "./DigitalMarketing.css"; 
+import "./DigitalMarketing.css";
 
 // Reusing career path images
 import careerPath0 from "../assets/career_path_0_2.png";
@@ -28,9 +28,9 @@ import careerPath2 from "../assets/career_path_6_10.png";
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "16 Weeks", label: "Duration" },
-  { value: "10 Interviews", label: "Interview Opportunities" },
+ { value: "20 Interviews",label:"Interview Call Opportunities Guaranteed" },
   { value: "30+ Tools", label: "Mastered" },
-  { value: "Live Budgets", label: "Real Campaigns" },
+
   { value: "AI-Powered", label: "Marketing Workflows" },
 ];
 
@@ -160,6 +160,9 @@ const faqData = [
   { q: "What tools will I learn?", a: "You will master 30+ industry tools including Meta Ads, Google Ads, GA4, Ahrefs, HubSpot, Zapier, ChatGPT, and Midjourney." },
   { q: "Do you provide placement support?", a: "Yes! Weeks 13-16 are completely dedicated to Resume building, Portfolio creation, Mock Interviews, and direct Placement Outreach." },
   { q: "How much AI is involved?", a: "AI is deeply integrated. You will learn Prompt Engineering, AI SEO, AI Content Generation (Claude/Gemini), and AI Image Generation (Midjourney/Canva)." },
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DigitalMarketing = () => {
@@ -188,7 +191,7 @@ const DigitalMarketing = () => {
           1. HERO
           ============================================================ */}
       <section id="overview" className="relative min-h-[100vh] flex flex-col items-center justify-center pt-32 pb-24 px-6 overflow-hidden bg-[#050200]">
-        
+
         {/* 1. Full-Bleed Minimalist Bright Background */}
         <div className="absolute inset-0 z-0 bg-[#080300]">
           {/* Subtle Grid Pattern */}
@@ -196,13 +199,13 @@ const DigitalMarketing = () => {
 
           {/* Vignette Mask */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.1)_0%,rgba(5,2,0,0.98)_100%)] pointer-events-none" />
-          
+
           {/* Bright Glowing Amber/Orange Orbs for Depth */}
-          <div 
-            className="absolute top-[5%] left-[20%] w-[500px] h-[500px] bg-[#f59e0b]/15 blur-[120px] rounded-full pointer-events-none mix-blend-screen" 
+          <div
+            className="absolute top-[5%] left-[20%] w-[500px] h-[500px] bg-[#f59e0b]/15 blur-[120px] rounded-full pointer-events-none mix-blend-screen"
           />
-          <div 
-            className="absolute bottom-[10%] right-[15%] w-[600px] h-[600px] bg-[#ea580c]/15 blur-[150px] rounded-full pointer-events-none mix-blend-screen" 
+          <div
+            className="absolute bottom-[10%] right-[15%] w-[600px] h-[600px] bg-[#ea580c]/15 blur-[150px] rounded-full pointer-events-none mix-blend-screen"
             style={{ animationDelay: '1s' }}
           />
         </div>
@@ -245,7 +248,7 @@ const DigitalMarketing = () => {
           {/* Hyper-Premium Interactive Elements */}
           <div className="flex flex-col items-center gap-12 px-4">
             <div className="flex flex-wrap justify-center gap-6">
-              
+
               {/* Spinning Conic Gradient Button */}
               <div className="relative group rounded-full p-[2px] overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.2)] hover:shadow-[0_0_50px_rgba(234,88,12,0.4)] transition-shadow duration-500">
                 <div className="absolute inset-0 bg-[conic-gradient(from_0deg,transparent_0_240deg,rgba(245,158,11,0.8)_360deg)] animate-[spin_3s_linear_infinite] opacity-100" />
@@ -267,52 +270,52 @@ const DigitalMarketing = () => {
                 View Curriculum
               </button>
             </div>
-            
+
             {/* Ice White Placement Banner (Styled for Dark/Amber Theme) */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
               className="mt-10 mx-auto w-fit bg-[#0f0600] rounded-[16px] py-3 px-8 md:px-14 flex flex-col md:flex-row items-center gap-8 md:gap-20 shadow-2xl border border-amber-900/50"
             >
-               {/* Placements */}
-               <div className="flex items-center gap-3 text-left">
-                  <div className="w-10 h-10 rounded-lg bg-amber-950/50 flex items-center justify-center shadow-inner shrink-0 border border-amber-800/50">
-                     <Megaphone className="text-amber-400" size={18} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                     <p className="text-amber-200/60 text-[10px] font-bold mb-0.5">Placements</p>
-                     <p className="text-white text-[20px] font-bold leading-none">1100+</p>
-                  </div>
-               </div>
+              {/* Placements */}
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-10 h-10 rounded-lg bg-amber-950/50 flex items-center justify-center shadow-inner shrink-0 border border-amber-800/50">
+                  <Megaphone className="text-amber-400" size={18} strokeWidth={2.5} />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-amber-200/60 text-[10px] font-bold mb-0.5">Placements</p>
+                  <p className="text-white text-[20px] font-bold leading-none">1100+</p>
+                </div>
+              </div>
 
-               {/* Separator */}
-               <div className="hidden md:block w-px h-10 bg-amber-900/50"></div>
+              {/* Separator */}
+              <div className="hidden md:block w-px h-10 bg-amber-900/50"></div>
 
-               {/* Salary Hike */}
-               <div className="flex items-center gap-3 text-left">
-                  <div className="w-10 h-10 rounded-lg bg-amber-950/50 flex items-center justify-center shadow-inner shrink-0 border border-amber-800/50">
-                     <TrendingUp className="text-amber-400" size={18} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                     <p className="text-amber-200/60 text-[10px] font-bold mb-0.5">Salary Hike</p>
-                     <p className="text-white text-[18px] font-bold leading-[1.1]">Upto <br/> 350%</p>
-                  </div>
-               </div>
+              {/* Salary Hike */}
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-10 h-10 rounded-lg bg-amber-950/50 flex items-center justify-center shadow-inner shrink-0 border border-amber-800/50">
+                  <TrendingUp className="text-amber-400" size={18} strokeWidth={2.5} />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-amber-200/60 text-[10px] font-bold mb-0.5">Salary Hike</p>
+                  <p className="text-white text-[18px] font-bold leading-[1.1]">Upto <br /> 350%</p>
+                </div>
+              </div>
 
-               {/* Separator */}
-               <div className="hidden md:block w-px h-10 bg-amber-900/50"></div>
+              {/* Separator */}
+              <div className="hidden md:block w-px h-10 bg-amber-900/50"></div>
 
-               {/* ROI */}
-               <div className="flex items-center gap-3 text-left">
-                  <div className="w-10 h-10 rounded-lg bg-amber-950/50 flex items-center justify-center shadow-inner shrink-0 border border-amber-800/50">
-                     <Landmark className="text-amber-400" size={18} strokeWidth={2.5} />
-                  </div>
-                  <div className="flex flex-col justify-center">
-                     <p className="text-amber-200/60 text-[10px] font-bold mb-0.5">ROI on Course</p>
-                     <p className="text-white text-[20px] font-bold leading-none">10x to 20X</p>
-                  </div>
-               </div>
+              {/* ROI */}
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-10 h-10 rounded-lg bg-amber-950/50 flex items-center justify-center shadow-inner shrink-0 border border-amber-800/50">
+                  <Landmark className="text-amber-400" size={18} strokeWidth={2.5} />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <p className="text-amber-200/60 text-[10px] font-bold mb-0.5">ROI on Course</p>
+                  <p className="text-white text-[20px] font-bold leading-none">10x to 20X</p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -320,7 +323,7 @@ const DigitalMarketing = () => {
 
       {/* STATS BAR */}
       <ProgramStatsBar stats={trustStats} labelColor="text-amber-200" />
-      
+
       {/* COLLABORATION COMPANY MARQUEE */}
       <AuthorityMarquee theme="dark" />
 
@@ -354,7 +357,7 @@ const DigitalMarketing = () => {
             />
           </div>
 
-          <div 
+          <div
             className="grid grid-cols-1 lg:grid-cols-2 gap-8"
             onMouseEnter={() => setIsCareerPathHovered(true)}
             onMouseLeave={() => setIsCareerPathHovered(false)}
@@ -366,9 +369,8 @@ const DigitalMarketing = () => {
                 return (
                   <div
                     key={idx}
-                    className={`border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer ${
-                      isActive ? "border-amber-600/50 bg-amber-950/40" : "border-amber-900/30 bg-[#1a0a00] hover:border-amber-700/50"
-                    }`}
+                    className={`border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer ${isActive ? "border-amber-600/50 bg-amber-950/40" : "border-amber-900/30 bg-[#1a0a00] hover:border-amber-700/50"
+                      }`}
                     onClick={() => setActiveCareerPath(idx)}
                   >
                     <div className="p-6">
@@ -383,7 +385,7 @@ const DigitalMarketing = () => {
                       </div>
                       <h3 className="text-lg font-bold text-white">{path.title}</h3>
 
-                      <div 
+                      <div
                         className={`transition-all duration-500 ease-in-out overflow-hidden`}
                         style={{ maxHeight: isActive ? '500px' : '0px', opacity: isActive ? 1 : 0 }}
                       >
@@ -431,10 +433,10 @@ const DigitalMarketing = () => {
       </section>
 
       {/* CURRICULUM */}
-      <PremiumCurriculum 
-        phases={dmPhases} 
-        title="16-Week Marketing Roadmap" 
-        accentColor="text-amber-400" 
+      <PremiumCurriculum
+        phases={dmPhases}
+        title="16-Week Marketing Roadmap"
+        accentColor="text-amber-400"
         bgColor="bg-[#050200]"
         cardBgColor="bg-[#0f0600]"
       />
@@ -498,46 +500,46 @@ const DigitalMarketing = () => {
                 className="glass-panel rounded-[28px] p-8 relative overflow-hidden group cursor-pointer border border-amber-900/30 hover:border-amber-500/50 transition-all duration-500 min-h-[380px] flex flex-col bg-[#1a0a00]"
                 onClick={() => setShowPopup(true)}
               >
-                 {/* Gradient overlay */}
-                 <div className="absolute inset-0 bg-gradient-to-t from-black via-[#0a0400]/60 to-transparent z-0 pointer-events-none"></div>
-                 
-                 <div className="relative z-10 flex flex-col h-full">
-                    <div className="flex justify-between items-start mb-8">
-                       <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-[#050200] border border-amber-900/50 text-white shadow-[0_0_20px_rgba(245,158,11,0.05)] group-hover:scale-110 group-hover:border-amber-500 transition-all duration-500">
-                          {React.createElement(project.icon, {
-                            size: 24,
-                            className: "text-amber-500/70 group-hover:text-amber-400 transition-colors duration-500",
-                            strokeWidth: 1.5,
-                          })}
-                       </div>
-                       <span className="text-[11px] font-bold text-amber-200 bg-amber-950/50 px-3 py-1.5 rounded-full border border-amber-800/50 backdrop-blur-md">Growth Project</span>
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-white mb-4 leading-tight group-hover:text-amber-200 transition-colors">
-                       {project.title}
-                    </h3>
-                    
-                    <p className="text-amber-100/60 text-sm leading-relaxed mb-8 flex-grow">
-                       {project.desc}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-8 mt-auto">
-                       {project.tools.slice(0,3).map(t => (
-                          <span key={t} className="text-[10px] font-semibold bg-[#050200] border border-amber-900/50 text-amber-300/80 px-3 py-1.5 rounded-lg">
-                             {t}
-                          </span>
-                       ))}
-                       {project.tools.length > 3 && (
-                          <span className="text-[10px] font-semibold bg-[#050200] border border-amber-900/50 text-amber-300/60 px-3 py-1.5 rounded-lg">
-                             +{project.tools.length - 3}
-                          </span>
-                       )}
-                    </div>
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-[#0a0400]/60 to-transparent z-0 pointer-events-none"></div>
 
-                    <div className="flex items-center text-sm font-bold text-white group-hover:translate-x-2 transition-transform duration-300 pt-4 border-t border-amber-900/30">
-                       View Project Details <ArrowRight size={16} className="ml-2 text-amber-500/70 group-hover:text-amber-400 transition-colors" />
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex justify-between items-start mb-8">
+                    <div className="w-14 h-14 rounded-2xl flex items-center justify-center bg-[#050200] border border-amber-900/50 text-white shadow-[0_0_20px_rgba(245,158,11,0.05)] group-hover:scale-110 group-hover:border-amber-500 transition-all duration-500">
+                      {React.createElement(project.icon, {
+                        size: 24,
+                        className: "text-amber-500/70 group-hover:text-amber-400 transition-colors duration-500",
+                        strokeWidth: 1.5,
+                      })}
                     </div>
-                 </div>
+                    <span className="text-[11px] font-bold text-amber-200 bg-amber-950/50 px-3 py-1.5 rounded-full border border-amber-800/50 backdrop-blur-md">Growth Project</span>
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-white mb-4 leading-tight group-hover:text-amber-200 transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-amber-100/60 text-sm leading-relaxed mb-8 flex-grow">
+                    {project.desc}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                    {project.tools.slice(0, 3).map(t => (
+                      <span key={t} className="text-[10px] font-semibold bg-[#050200] border border-amber-900/50 text-amber-300/80 px-3 py-1.5 rounded-lg">
+                        {t}
+                      </span>
+                    ))}
+                    {project.tools.length > 3 && (
+                      <span className="text-[10px] font-semibold bg-[#050200] border border-amber-900/50 text-amber-300/60 px-3 py-1.5 rounded-lg">
+                        +{project.tools.length - 3}
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="flex items-center text-sm font-bold text-white group-hover:translate-x-2 transition-transform duration-300 pt-4 border-t border-amber-900/30">
+                    View Project Details <ArrowRight size={16} className="ml-2 text-amber-500/70 group-hover:text-amber-400 transition-colors" />
+                  </div>
+                </div>
               </div>
             ))}
 
@@ -547,7 +549,7 @@ const DigitalMarketing = () => {
                 <Layers size={28} className="text-amber-400" />
               </div>
               <h3 className="text-3xl font-black text-white mb-4 leading-tight ag-font-outfit">
-                360° Marketing<br/>Strategy
+                360° Marketing<br />Strategy
               </h3>
               <p className="text-amber-100/70 text-[15px] mb-8 max-w-[240px] leading-relaxed">
                 Build 8 comprehensive portfolios combining Ads, SEO, and AI workflows.
@@ -626,14 +628,14 @@ const DigitalMarketing = () => {
             <span className="w-2 h-2 rounded-full bg-[#f59e0b]" />
             WHERE THE HUNGRY BUILD WHAT'S NEXT.
           </div>
-          
+
           <h2 className="text-3xl md:text-[48px] leading-[1.2] font-black text-white tracking-tight mb-6 ag-font-outfit max-w-4xl mx-auto">
-            Your Next Role Won't Come From More Applications.<br/>
+            Your Next Role Won't Come From More Applications.<br />
             <span className="text-[#f59e0b]">It Will Come From Becoming Impossible to Ignore.</span>
           </h2>
-          
+
           <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-4xl mx-auto leading-relaxed">
-            Up to 10 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br/>
+            Up to 10 Guaranteed Interview Opportunities* &bull; 500+ Hiring Partners &bull; Real Projects &bull; Expert Mentorship<br />
             <span className="font-semibold mt-3 inline-block text-white">Built for professionals who refuse average.</span>
           </p>
 
@@ -644,7 +646,7 @@ const DigitalMarketing = () => {
               </div>
             </div>
             <button
-              onClick={() => {}} 
+              onClick={() => { }}
               className="px-8 py-4 text-[16px] font-bold rounded-xl border border-white/10 bg-[#161b22] text-white hover:bg-[#1f242c] transition-colors w-full sm:w-auto"
             >
               Download Brochure

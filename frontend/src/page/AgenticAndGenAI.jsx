@@ -25,10 +25,10 @@ const heroImages = [cyberTechBg, cyberTechBg2, cyberTechBg3];
 
 const trustStats = [
   { value: "24 Weeks", label: "Duration" },
-  { value: "10 Interviews", label: "Interview Opportunities" },
+  // { value: "", label: "" },
   { value: "60 Students", label: "Batch Size" },
   { value: "5 Capstones", label: "Enterprise Projects" },
-  { value: "15+ Interviews", label: "Interview Opportunities" },
+  { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
 ];
 
 /* ──────── DATA ──────── */
@@ -185,6 +185,9 @@ const FAQS = [
   { q: "No prior AI/ML experience — can I join?", a: "Yes. Phase 0 gives you pre-recorded foundational content in Python and APIs. The main program starts from LLM basics and builds progressively. Your software engineering background is all you need." },
   { q: "What does 'placement support' really mean?", a: "ATS-optimized resume building, LinkedIn & GitHub profile reviews, mock technical interviews by working engineers, referral pipelines into 200+ hiring partners, and 15+ curated interview opportunities per student." },
   { q: "Is EMI truly interest-free?", a: "Yes — 0% interest, no processing fee, no hidden charges. EMI starts at ₹5,000/month. The fee covers everything: curriculum, all 5 projects, mentorship, certification, and placement support." },
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 30 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 /* ──────── COMPONENT ──────── */

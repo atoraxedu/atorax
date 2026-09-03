@@ -49,10 +49,9 @@ const toolsList = [
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "16 Weeks", label: "Duration" },
-  { value: "10 Interviews", label: "Interview Opportunities" },
   { value: "120+ Hours", label: "Hands-on Practice" },
   { value: "6 Capstones", label: "Real Projects" },
-  { value: "20+", label: "Interview Opportunities" },
+ { value: "20 Interviews",label:"Interview Call Opportunities Guaranteed" },
 ];
 
 const careerPaths = [
@@ -169,6 +168,9 @@ const faqData = [
   { q: "Will I get certified upon completion?", a: "Yes, you earn a professional-grade verifiable Software Engineering and AI Application Developer certification recognized by 500+ corporate hiring partners." },
   { q: "What projects will I build?", a: "You will build over 6 real-world enterprise projects including a Netflix clone, an LMS platform, and a comprehensive AI-powered capstone project such as a recruitment CRM or FinTech solution." },
   { q: "Does the program include placement support?", a: "Yes, the last 4 weeks are entirely dedicated to advanced DSA prep, SOLID system design, resume review, LinkedIn profiling, and mock technical & HR interviews, backed by direct placement support." },
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const Tag = ({ children }) => (
