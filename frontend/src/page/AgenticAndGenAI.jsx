@@ -25,10 +25,11 @@ const heroImages = [cyberTechBg, cyberTechBg2, cyberTechBg3];
 
 const trustStats = [
   { value: "24 Weeks", label: "Duration" },
+   { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
   // { value: "", label: "" },
   { value: "60 Students", label: "Batch Size" },
   { value: "5 Capstones", label: "Enterprise Projects" },
-  { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
+ 
 ];
 
 /* ──────── DATA ──────── */
@@ -377,7 +378,7 @@ const AgenticAndGenAI = () => {
             <p className="text-slate-400 text-lg">Master the modern Generative AI &amp; Agentic automation stack</p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-10">
+          <div className="grid grid-cols-3 sm:flex sm:flex-wrap justify-items-center sm:justify-center gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10">
             {toolsList.map((tool, i) => (
               <div
                 key={i}

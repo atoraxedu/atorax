@@ -455,7 +455,7 @@ const DigitalMarketing = () => {
             <p className="text-gray-400 text-lg">Master the modern digital marketing &amp; AI business stack</p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-10">
+          <div className="grid grid-cols-3 sm:flex sm:flex-wrap justify-items-center sm:justify-center gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10">
             {toolsList.map((tool, i) => (
               <div
                 key={i}
