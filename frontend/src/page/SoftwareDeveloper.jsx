@@ -191,20 +191,21 @@ const capstoneProjects = [
   { icon: HeartPulse, title: "Healthcare Management System", desc: "Multi-tenant medical records, appointment scheduling, role-based access, and patient health charts.", tools: ["Next.js", "Spring Boot", "MongoDB", "Docker"] },
   { icon: Users, title: "Enterprise CRM Platform", desc: "Highly scalable sales CRM with dashboard reporting, pipeline tracking, and customer contact management.", tools: ["React", "Python", "PostgreSQL", "AWS S3"] },
   { icon: DollarSign, title: "FinTech Loan Management System", desc: "Distributed payment flows, loan application processing, KYC document verification, and ledger storage.", tools: ["Java", "Spring Boot", "PostgreSQL", "AWS EC2"] },
-  { icon: GraduationCap, title: "EdTech Learning Platform (LMS)", desc: "Interactive course modules, video streaming, student enrollment trackers, and payment integration.", tools: ["Next.js", "FastAPI", "MongoDB", "Docker"] },
+  { icon: GraduationCap, title: "Learning Management System (LMS)", desc: "Interactive course modules, video streaming, student enrollment trackers, and payment integration.", tools: ["Next.js", "FastAPI", "MongoDB", "Docker"] },
   { icon: BrainCircuit, title: "AI Document Search & Knowledge Platform", desc: "RAG system indexing corporate documents using embeddings and vector search for QA automation.", tools: ["LangChain", "Vector DB", "OpenAI", "Python"] },
 ];
 
 const faqData = [
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 30 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+
   { q: "What is the duration of the program?", a: "The program runs for 24 weeks (6 months) consisting of 16 weeks of core technical training, 4 weeks of enterprise capstone projects, and 4 weeks of career branding & interview prep." },
   { q: "Who is this program designed for?", a: "Recent engineering or computer science graduates and working professionals (0–5 years of experience) looking to fast-track their development skills and break into elite SDE or AI roles." },
   { q: "What is the format of the classes?", a: "The program is 100% online with live mentor-led weekend masterclasses, weekly progress tracking, asynchronous lab assignments, and active Discord community support." },
   { q: "Will I get certified upon completion?", a: "Yes, you earn a professional-grade verifiable Software Engineering and AI Application Developer certification recognized by 500+ corporate hiring partners." },
   { q: "What projects will I build?", a: "You will build over 6 real-world enterprise projects including a Netflix clone, an LMS platform, and a comprehensive AI-powered capstone project such as a recruitment CRM or FinTech solution." },
   { q: "Does the program include placement support?", a: "Yes, the last 4 weeks are entirely dedicated to advanced DSA prep, SOLID system design, resume review, LinkedIn profiling, and mock technical & HR interviews, backed by direct placement support." },
-  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 30 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
-  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
-  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const Tag = ({ children }) => (

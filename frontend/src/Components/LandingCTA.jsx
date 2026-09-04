@@ -108,9 +108,9 @@ const LandingCTA = () => {
               </button>
             </div>
 
-            <p className="text-gray-600 text-xs mt-10 font-medium tracking-wide uppercase">
+            {/* <p className="text-gray-600 text-xs mt-10 font-medium tracking-wide uppercase">
               14-Day Money-Back Guarantee &nbsp;·&nbsp; No-Cost EMI Available &nbsp;·&nbsp; Selective Admission
-            </p>
+            </p> */}
           </div>
         </motion.div>
       </div>

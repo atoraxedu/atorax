@@ -160,14 +160,15 @@ const capstoneProjects = [
 ];
 
 const faqData = [
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+
   { q: "What is the duration of the program?", a: "The program runs for 16 weeks (4 months), 100% online with live interactive sessions." },
   { q: "Who is this program for?", a: "Business analysts, MIS analysts, and professionals looking to master Data Analytics, SQL, Power BI, and modern AI tools." },
   { q: "Will I get certified?", a: "Yes. You earn multiple Professional Certifications including Data Analytics, SQL, Power BI, Python, and AI for Business." },
   { q: "Do you provide placement support?", a: "Yes! Weeks 13-16 are entirely dedicated to Resume building, Interview Prep (150+ SQL questions), Mock Interviews, and direct Placement Acceleration." },
   { q: "What kind of projects will I build?", a: "You will build 8 hands-on portfolio projects, ranging from Retail Sales Dashboards and Marketing Analytics to a full end-to-end Industry Capstone using AI." },
-  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
-  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
-  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DataAnalytics = () => {

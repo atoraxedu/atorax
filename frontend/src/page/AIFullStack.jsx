@@ -155,14 +155,15 @@ const capstoneProjects = [
 ];
 
 const faqData = [
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+
   { q: "What is the duration of the program?", a: "The program runs for 16 weeks (4 months), 100% online with live interactive sessions." },
   { q: "Do I need prior coding experience?", a: "No, Phase 1 starts from absolute web foundations (HTML/CSS) before scaling up to React and AI APIs." },
   { q: "What stacks are covered?", a: "You will master the MERN stack (MongoDB, Express, React, Node.js) along with Next.js, PostgreSQL, Tailwind, and AI APIs." },
   { q: "Do you provide placement support?", a: "Yes! Weeks 13-16 are completely dedicated to Resume building, DSA (100+ Leetcode), Mock Interviews, and direct Placement Outreach." },
   { q: "Will I learn how to build AI apps?", a: "Absolutely. You will build an AI Business Assistant and an AI SaaS product utilizing OpenAI/Gemini APIs and Prompt Engineering." },
-  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
-  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
-  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const AIFullStack = () => {

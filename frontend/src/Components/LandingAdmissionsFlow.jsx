@@ -18,7 +18,7 @@ const LandingAdmissionsFlow = () => {
       icon: <PhoneCall size={28} />,
       label: "Step 02",
       title: "Fitment Call",
-      desc: "A focused 15-minute 1:1 call with our admissions team. We assess your commitment level, technical baseline, and program readiness — not your current skill level.",
+      desc: "A focused 30-minute 1:1 call with our admissions team. We assess your commitment level, technical baseline, and program readiness — not your current skill level.",
       time: "15-minute call",
       glowColor: "group-hover:from-blue-500/20 group-hover:to-cyan-500/20",
       iconGlow: "text-cyan-400",

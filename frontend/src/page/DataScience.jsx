@@ -160,14 +160,15 @@ const capstoneProjects = [
 ];
 
 const faqData = [
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+
   { q: "What is the duration of the program?", a: "The program runs for 16 weeks (4 months), 100% online with live weekend sessions." },
   { q: "Who is this program for?", a: "Data analysts, software engineers, and tech leaders looking to master Data Science, Machine Learning, and Generative AI." },
   { q: "Will I get certified?", a: "Yes. You earn 4 Professional Certifications including Data Science, Machine Learning, Generative AI, and Capstone Project." },
   { q: "Do you provide placement support?", a: "Yes, Phase 3 is entirely dedicated to Resume Mastery, Interview Prep, Case Studies, and Placement Support." },
   { q: "What kind of projects will I build?", a: "You will build 10+ hands-on projects, ranging from Sales Dashboards and Churn Prediction to a full Custom AI Chatbot using LLMs." },
-  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
-  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
-  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DataScience = () => {

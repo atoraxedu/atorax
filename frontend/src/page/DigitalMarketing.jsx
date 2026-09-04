@@ -155,14 +155,15 @@ const capstoneProjects = [
 ];
 
 const faqData = [
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
+
   { q: "What is the duration of the program?", a: "The program runs for 16 weeks (4 months), featuring live interactive sessions and real campaign execution." },
   { q: "Do I need prior marketing experience?", a: "No, Phase 1 starts from absolute marketing foundations and consumer journeys before scaling up to complex ads and AI." },
   { q: "What tools will I learn?", a: "You will master 30+ industry tools including Meta Ads, Google Ads, GA4, Ahrefs, HubSpot, Zapier, ChatGPT, and Midjourney." },
   { q: "Do you provide placement support?", a: "Yes! Weeks 13-16 are completely dedicated to Resume building, Portfolio creation, Mock Interviews, and direct Placement Outreach." },
   { q: "How much AI is involved?", a: "AI is deeply integrated. You will learn Prompt Engineering, AI SEO, AI Content Generation (Claude/Gemini), and AI Image Generation (Midjourney/Canva)." },
-  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
-  { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
-  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DigitalMarketing = () => {

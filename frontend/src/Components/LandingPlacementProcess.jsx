@@ -108,7 +108,7 @@ const LandingPlacementProcess = () => {
                 <div className="grid grid-cols-2 gap-x-8 gap-y-12">
                   <div>
                     <div className="text-4xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mb-3">82%</div>
-                    <div className="text-[10px] font-black text-[#00FFA3] uppercase tracking-widest">Placed within 90 days</div>
+                    <div className="text-[10px] font-black text-[#00FFA3] uppercase tracking-widest">Placed within 120 days</div>
                   </div>
                   <div>
                     <div className="text-4xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#00FFA3] to-emerald-300 mb-3">24L</div>
