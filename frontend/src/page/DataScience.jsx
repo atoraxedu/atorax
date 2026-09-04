@@ -240,7 +240,7 @@ const DataScience = () => {
               <span className="absolute w-2 h-2 rounded-full bg-[#eab308] opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-[#eab308]/40 animate-ping" />
             </div>
-            16-Week Professional Program
+            16-Weeks Professional Program
           </div>
 
           {/* Epic Metallic Typography */}
@@ -262,7 +262,7 @@ const DataScience = () => {
           <p
             className="text-lg md:text-[22px] text-gray-400 mb-16 max-w-3xl leading-relaxed font-medium px-4 drop-shadow-lg"
           >
-            Build job-ready skills in Data Analytics, Machine Learning, and AI-Powered Data Products in this intensive 16-week program.
+            Build job-ready skills in Data Analytics, Machine Learning, and AI-Powered Data Products in this intensive 16-Weeks program.
           </p>
 
           {/* Hyper-Premium Interactive Elements */}
@@ -455,7 +455,7 @@ const DataScience = () => {
       {/* CURRICULUM */}
       <PremiumCurriculum
         phases={dsPhases}
-        title="16-Week Data Roadmap"
+        title="16-Weeks Data Roadmap"
         accentColor="text-[#eab308]"
         bgColor="bg-[#020408]"
         cardBgColor="bg-[#0B1014]"

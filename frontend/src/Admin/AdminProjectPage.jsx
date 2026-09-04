@@ -205,7 +205,7 @@ const AdminProjectPage = () => {
                         </select>
 
                         <h3 style={{ marginTop: '30px', borderBottom: '1px solid #eee', paddingBottom: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                            24-Week Roadmap
+                            24-WEEKS Roadmap
                             <button
                                 type="button"
                                 onClick={() => setShowJsonInput(!showJsonInput)}
@@ -218,7 +218,7 @@ const AdminProjectPage = () => {
                         {showJsonInput ? (
                             <div style={{ marginTop: '20px' }}>
                                 <p style={{ fontSize: '13px', color: '#666', marginBottom: '10px' }}>
-                                    Paste your 24-week roadmap JSON here.
+                                    Paste your 24-WEEKS roadmap JSON here.
                                     <button type="button" onClick={copyTemplate} style={{ color: '#f15b29', background: 'none', border: 'none', cursor: 'pointer', padding: '0 5px' }}>
                                         [View Template]
                                     </button>

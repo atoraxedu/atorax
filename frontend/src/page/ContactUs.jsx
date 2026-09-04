@@ -218,8 +218,8 @@ const ContactUs = () => {
                 Wait for the <em>response</em>
               </h2>
               <p className="py-2">
-                Once Your registration is complete our team will review your
-                information,
+                Once your registration is complete, our team will review your
+                information.
               </p>
               <p>
                 Stay tuned as we prepare to provide you with personalized

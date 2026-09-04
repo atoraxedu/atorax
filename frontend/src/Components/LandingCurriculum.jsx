@@ -77,7 +77,7 @@ const LandingCurriculum = () => {
             Learn what top tech companies actually use.
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed font-light">
-            A battle-tested 24-week engineering path designed by ex-FAANG engineers to make you technically undeniable.
+            A battle-tested 24-WEEKS engineering path designed by ex-FAANG engineers to make you technically undeniable.
           </p>
         </div>
 
@@ -88,11 +88,10 @@ const LandingCurriculum = () => {
               <button
                 key={idx}
                 onClick={() => setActivePhase(idx)}
-                className={`shrink-0 lg:w-full text-left px-5 py-4 lg:py-5 rounded-xl border transition-all duration-300 flex items-center justify-between group ${
-                  activePhase === idx
+                className={`shrink-0 lg:w-full text-left px-5 py-4 lg:py-5 rounded-xl border transition-all duration-300 flex items-center justify-between group ${activePhase === idx
                     ? "bg-[#1A8352] border-[#1A8352] shadow-[0_0_20px_rgba(26,131,82,0.3)]"
                     : "bg-[#1A1A1A] border-white/10 hover:border-white/20 hover:bg-[#222]"
-                }`}
+                  }`}
               >
                 <div>
                   <div className={`text-[10px] font-bold uppercase tracking-wider mb-1 ${activePhase === idx ? "text-white/80" : "text-gray-400"}`}>

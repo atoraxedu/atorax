@@ -53,11 +53,11 @@ const toolsList = [
 /* ─── Static Data ─── */
 const trustStats = [
   { value: "24 Weeks", label: "Duration" },
-   { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
+  { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
   // { value: "20", label: "Interview Opportunities" },
   { value: "120+ Hours", label: "Hands-on Practice" },
   { value: "6 Capstones", label: "Real Projects" },
- 
+
 ];
 
 const careerPaths = [
@@ -281,7 +281,7 @@ const SoftwareDeveloper = () => {
               <span className="absolute w-2 h-2 rounded-full bg-[#818cf8] opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-[#818cf8]/40 animate-ping" />
             </div>
-            24-WEEK COMPREHENSIVE SDE PROGRAM
+            24-WEEKS COMPREHENSIVE SDE PROGRAM
           </div>
 
           {/* Epic Metallic Typography */}
@@ -304,7 +304,7 @@ const SoftwareDeveloper = () => {
           <p
             className="text-lg md:text-[22px] text-gray-400 mb-16 max-w-3xl leading-relaxed font-medium px-4 drop-shadow-lg"
           >
-            Master full-stack development, cloud-native architecture, and system design in this intensive 24-week software engineering program.
+            Master full-stack development, cloud-native architecture, and system design in this intensive 24-WEEKS software engineering program.
           </p>
 
           {/* Hyper-Premium Interactive Elements */}
@@ -527,7 +527,7 @@ const SoftwareDeveloper = () => {
       {/* CURRICULUM */}
       <PremiumCurriculum
         phases={softwarePhases}
-        title="24-Week Engineering Roadmap"
+        title="24-WEEKS Engineering Roadmap"
         accentColor="text-[#6366f1]"
         bgColor="bg-[#0B0F13]"
         cardBgColor="bg-[#12161A]"

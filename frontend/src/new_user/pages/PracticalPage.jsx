@@ -393,7 +393,7 @@ const PracticalPage = () => {
                         <p className="nd-practical-info-title">Why hands-on projects matter</p>
                         <p className="nd-practical-info-desc">
                             Real-world projects build confidence, sharpen problem-solving skills, and make your resume stand out.
-                            Select a project below that aligns with your interests — you'll follow a 24-week guided roadmap to build it from scratch.
+                            Select a project below that aligns with your interests — you'll follow a 24-WEEKS guided roadmap to build it from scratch.
                         </p>
                     </div>
                 </div>

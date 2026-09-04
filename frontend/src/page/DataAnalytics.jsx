@@ -240,7 +240,7 @@ const DataAnalytics = () => {
               <span className="absolute w-2 h-2 rounded-full bg-[#06b6d4] opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-[#06b6d4]/40 animate-ping" />
             </div>
-            16-Week Professional Program
+            16-Weeks Professional Program
           </div>
 
           {/* Epic Metallic Typography */}
@@ -455,7 +455,7 @@ const DataAnalytics = () => {
       {/* CURRICULUM */}
       <PremiumCurriculum
         phases={daPhases}
-        title="16-Week Analytics Roadmap"
+        title="16-Weeks Analytics Roadmap"
         accentColor="text-[#06b6d4]"
         bgColor="bg-[#020617]"
         cardBgColor="bg-[#0f172a]"

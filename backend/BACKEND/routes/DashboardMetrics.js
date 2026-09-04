@@ -11,7 +11,7 @@ const {
 
 /**
  * GET /api/dashboard/:userId
- * Returns all metrics for a user including the assignment matrix and 24-week readiness.
+ * Returns all metrics for a user including the assignment matrix and 24-WEEKS readiness.
  */
 router.get('/:userId', async (req, res) => {
     try {
@@ -43,7 +43,7 @@ router.get('/:userId', async (req, res) => {
         ];
         console.log(`[Dashboard] userId=${userIdStr} | assignmentStats found=${!!stats}`);
 
-        // Build 24-week data
+        // Build 24-WEEKS data
         const allWeeks = await WeeklyPractical.find({ userId });
         const weeklyProgress = Array.from({ length: 24 }, (_, i) => {
             const week = allWeeks.find(w => w.weekNumber === i + 1);

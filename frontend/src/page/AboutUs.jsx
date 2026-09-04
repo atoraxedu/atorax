@@ -136,14 +136,14 @@ const AboutUs = () => {
             </h2>
             <div className="max-w-3xl mx-auto text-lg text-center flex flex-col gap-5 tracking-tighter">
               <p data-aos="fade-up" className="">
-                we strive to redefine upskilling through transformative, By
-                merging academic rigor with practical learning with expert
-                mentorship, hands-on experiences, and an enhanced curriculum, we
+                We strive to redefine upskilling through transformative learning. By
+                merging academic rigor with practical learning, expert
+                mentorship, and hands-on experiences, we
                 equip individuals with the tools to solve complex challenges,
                 innovate, and lead confidently in their careers.
               </p>
               <p data-aos="fade-up" className="">
-                Our commitment extends beyond traditional learning, critical
+                Our commitment extends beyond traditional learning, fostering critical
                 thinking and real-world problem-solving in a supportive
                 environment that inspires growth and success.
               </p>
@@ -272,7 +272,7 @@ const AboutUs = () => {
                     icon:<FaBookOpen />
                 },
                 {
-                  title: "Industry Expertst",
+                  title: "Industry Experts",
                   description:
                     "Learn from experienced professionals with real-world insights.",
                     icon:<BsBriefcaseFill />

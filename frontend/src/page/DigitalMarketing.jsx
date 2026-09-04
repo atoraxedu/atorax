@@ -220,7 +220,7 @@ const DigitalMarketing = () => {
               <span className="absolute w-2 h-2 rounded-full bg-amber-400 opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-amber-200/50 animate-ping" />
             </div>
-            16-Week Professional Program
+            16-Weeks Professional Program
           </div>
 
           {/* Epic Metallic Typography */}
@@ -435,7 +435,7 @@ const DigitalMarketing = () => {
       {/* CURRICULUM */}
       <PremiumCurriculum
         phases={dmPhases}
-        title="16-Week Marketing Roadmap"
+        title="16-Weeks Marketing Roadmap"
         accentColor="text-amber-400"
         bgColor="bg-[#050200]"
         cardBgColor="bg-[#0f0600]"

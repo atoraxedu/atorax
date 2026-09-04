@@ -159,7 +159,7 @@ const OverviewPage = () => {
                 loading={metricsLoading}
             />
 
-            {/* 24-Week Internship Readiness */}
+            {/* 24-WEEKS Internship Readiness */}
             <InternshipReadinessSection
                 internshipReadiness={metrics?.internshipReadiness}
                 loading={metricsLoading}

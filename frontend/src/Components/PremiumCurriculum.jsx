@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const PremiumCurriculum = ({ 
-  phases = [], 
-  title = "16-Week Roadmap", 
-  accentColor = "text-[#34d399]", 
+const PremiumCurriculum = ({
+  phases = [],
+  title = "16-Weeks Roadmap",
+  accentColor = "text-[#34d399]",
   bgColor = "bg-[#0B0F13]",
   cardBgColor = "bg-[#12161A]"
 }) => {
@@ -44,7 +44,7 @@ const PremiumCurriculum = ({
   return (
     <section className={`${bgColor} text-gray-300 py-12 md:py-24 px-6 md:px-12 font-sans border-t border-white/5`}>
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header */}
         <div className="mb-16">
           <span className={`${accentColor} text-xs font-bold tracking-[0.2em] uppercase mb-4 block`}>
@@ -60,7 +60,7 @@ const PremiumCurriculum = ({
 
         {/* Layout Grid */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          
+
           {/* Left: Sticky Navigation */}
           <div className="lg:w-[35%] relative">
             <div className={`lg:sticky lg:top-32 flex flex-col p-6 lg:p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]`}>
@@ -70,9 +70,8 @@ const PremiumCurriculum = ({
                   <button
                     key={p.id}
                     onClick={() => scrollToPhase(p.id)}
-                    className={`text-left py-6 border-b border-white/10 last:border-b-0 group transition-all duration-300 ${
-                      isActive ? "bg-white/5 px-4 -mx-4 rounded-2xl border-transparent" : "hover:bg-white/5 hover:px-4 hover:-mx-4 hover:rounded-2xl"
-                    }`}
+                    className={`text-left py-6 border-b border-white/10 last:border-b-0 group transition-all duration-300 ${isActive ? "bg-white/5 px-4 -mx-4 rounded-2xl border-transparent" : "hover:bg-white/5 hover:px-4 hover:-mx-4 hover:rounded-2xl"
+                      }`}
                   >
                     <div className={`text-[10px] md:text-xs font-bold tracking-widest uppercase mb-2 ${accentColor}`}>
                       {p.phase} ({p.duration}):
@@ -89,8 +88,8 @@ const PremiumCurriculum = ({
           {/* Right: Scrolling Cards */}
           <div className="lg:w-[65%] flex flex-col gap-8">
             {phases.map((p) => (
-              <div 
-                key={p.id} 
+              <div
+                key={p.id}
                 id={p.id}
                 className={`${cardBgColor} border border-white/10 rounded-2xl p-6 md:p-10 shadow-xl transition-all duration-300 hover:border-white/20`}
               >

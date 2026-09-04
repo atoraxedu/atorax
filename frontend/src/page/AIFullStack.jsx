@@ -220,7 +220,7 @@ const AIFullStack = () => {
               <span className="absolute w-2 h-2 rounded-full bg-slate-300 opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-slate-100/40 animate-ping" />
             </div>
-            16-Week Professional Program
+            16-Weeks Professional Program
           </div>
 
           {/* Epic Metallic Typography */}
@@ -435,7 +435,7 @@ const AIFullStack = () => {
       {/* CURRICULUM */}
       <PremiumCurriculum
         phases={sdPhases}
-        title="16-Week Engineering Roadmap"
+        title="16-Weeks Engineering Roadmap"
         accentColor="text-white"
         bgColor="bg-black"
         cardBgColor="bg-[#0f0f0f]"

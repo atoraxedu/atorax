@@ -162,16 +162,16 @@ const AdvProjectPage = () => {
             {/* Background Decorations */}
             <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-indigo-500/10 blur-[100px] pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-cyan-500/10 blur-[100px] pointer-events-none"></div>
-            
-            <Toaster position="top-center" toastOptions={{ 
-                style: { background: '#1e293b', color: '#f8fafc', border: '1px solid #334155', borderRadius: '12px', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' } 
+
+            <Toaster position="top-center" toastOptions={{
+                style: { background: '#1e293b', color: '#f8fafc', border: '1px solid #334155', borderRadius: '12px', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }
             }} />
-            
+
             {/* Form Overlay Modal */}
             {isFormVisible && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 bg-slate-900/40 backdrop-blur-sm animate-in fade-in duration-200">
                     <div className="bg-white border border-slate-200 shadow-2xl rounded-3xl w-full max-w-5xl overflow-hidden flex flex-col max-h-[95vh] animate-in zoom-in-95 duration-300">
-                        
+
                         {/* Modal Header */}
                         <div className="flex justify-between items-center px-8 py-6 bg-white border-b border-slate-100 z-10 shrink-0">
                             <div className="flex items-center gap-4">
@@ -183,7 +183,7 @@ const AdvProjectPage = () => {
                                         {editingProjectId ? "Edit Project" : "Create New Project"}
                                     </h2>
                                     <p className="text-sm text-slate-500 font-medium m-0 mt-1">
-                                        Configure the 24-week roadmap and project details
+                                        Configure the 24-WEEKS roadmap and project details
                                     </p>
                                 </div>
                             </div>
@@ -206,9 +206,9 @@ const AdvProjectPage = () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
                                             <label className="block text-slate-700 text-sm font-bold mb-2">Advance Course <span className="text-rose-500">*</span></label>
-                                            <select 
-                                                value={selectedCourseId} 
-                                                onChange={(e) => setSelectedCourseId(e.target.value)} 
+                                            <select
+                                                value={selectedCourseId}
+                                                onChange={(e) => setSelectedCourseId(e.target.value)}
                                                 className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all appearance-none cursor-pointer"
                                                 required
                                             >
@@ -218,11 +218,11 @@ const AdvProjectPage = () => {
                                                 ))}
                                             </select>
                                         </div>
-                                        
+
                                         <div>
                                             <label className="block text-slate-700 text-sm font-bold mb-2">Difficulty Level</label>
-                                            <select 
-                                                value={level} 
+                                            <select
+                                                value={level}
                                                 onChange={(e) => setLevel(e.target.value)}
                                                 className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all appearance-none cursor-pointer"
                                             >
@@ -235,24 +235,24 @@ const AdvProjectPage = () => {
 
                                     <div>
                                         <label className="block text-slate-700 text-sm font-bold mb-2">Project Title <span className="text-rose-500">*</span></label>
-                                        <input 
-                                            type="text" 
-                                            value={title} 
-                                            onChange={(e) => setTitle(e.target.value)} 
-                                            placeholder="e.g., Enterprise E-commerce Platform" 
+                                        <input
+                                            type="text"
+                                            value={title}
+                                            onChange={(e) => setTitle(e.target.value)}
+                                            placeholder="e.g., Enterprise E-commerce Platform"
                                             className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all placeholder:text-slate-400"
-                                            required 
+                                            required
                                         />
                                     </div>
 
                                     <div>
                                         <label className="block text-slate-700 text-sm font-bold mb-2">Project Description <span className="text-rose-500">*</span></label>
-                                        <textarea 
-                                            value={description} 
-                                            onChange={(e) => setDescription(e.target.value)} 
-                                            placeholder="Provide a comprehensive overview of the project scope and deliverables..." 
+                                        <textarea
+                                            value={description}
+                                            onChange={(e) => setDescription(e.target.value)}
+                                            placeholder="Provide a comprehensive overview of the project scope and deliverables..."
                                             className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all placeholder:text-slate-400 h-32 resize-none custom-scrollbar"
-                                            required 
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@ const AdvProjectPage = () => {
                                 <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-slate-100 pb-4 mb-6 gap-4">
                                         <h3 className="text-sm font-black text-slate-400 uppercase tracking-widest flex items-center gap-2 m-0">
-                                            <Map size={16} /> 24-Week Curriculum Roadmap
+                                            <Map size={16} /> 24-WEEKS Curriculum Roadmap
                                         </h3>
                                         <button
                                             type="button"
@@ -278,7 +278,7 @@ const AdvProjectPage = () => {
                                             <div className="flex items-center justify-between bg-amber-50 p-4 rounded-xl border border-amber-200">
                                                 <div className="flex items-center gap-3 text-amber-800">
                                                     <AlertCircle size={20} className="shrink-0" />
-                                                    <p className="text-sm font-medium m-0">Paste your raw 24-week JSON structure here. Need the format?</p>
+                                                    <p className="text-sm font-medium m-0">Paste your raw 24-WEEKS JSON structure here. Need the format?</p>
                                                 </div>
                                                 <button type="button" onClick={copyTemplate} className="flex items-center gap-2 px-3 py-1.5 bg-amber-200/50 text-amber-800 hover:bg-amber-200 rounded-lg text-xs font-bold transition-colors">
                                                     <Copy size={14} /> Copy Template
@@ -290,9 +290,9 @@ const AdvProjectPage = () => {
                                                 placeholder={`{\n  "1": {\n    "phase": "Phase 1",\n    "tasks": ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5"]\n  }\n}`}
                                                 className="w-full h-[400px] p-5 bg-slate-900 border border-slate-800 rounded-xl text-emerald-400 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 custom-scrollbar"
                                             />
-                                            <button 
-                                                type="button" 
-                                                onClick={handleApplyJson} 
+                                            <button
+                                                type="button"
+                                                onClick={handleApplyJson}
                                                 className="w-full flex justify-center items-center gap-2 bg-slate-900 text-white font-bold py-3.5 rounded-xl hover:bg-slate-800 transition-colors shadow-lg"
                                             >
                                                 <CheckCircle2 size={18} /> Validate & Apply JSON
@@ -341,19 +341,19 @@ const AdvProjectPage = () => {
                                 </div>
                             </form>
                         </div>
-                        
+
                         {/* Modal Footer */}
                         <div className="px-8 py-5 bg-white border-t border-slate-100 shrink-0 flex justify-end gap-3">
-                            <button 
+                            <button
                                 type="button"
                                 onClick={resetForm}
                                 className="px-6 py-2.5 rounded-xl font-bold text-slate-600 hover:bg-slate-100 transition-colors"
                             >
                                 Cancel
                             </button>
-                            <button 
+                            <button
                                 form="project-form"
-                                type="submit" 
+                                type="submit"
                                 className="px-8 py-2.5 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-500/30 transition-all flex items-center gap-2"
                             >
                                 {editingProjectId ? <CheckCircle2 size={18} /> : <Plus size={18} />}
@@ -366,7 +366,7 @@ const AdvProjectPage = () => {
 
             {/* Main Page Layout */}
             <div className="max-w-[1600px] mx-auto relative z-10">
-                
+
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 gap-6">
                     <div>
@@ -376,12 +376,12 @@ const AdvProjectPage = () => {
                         </h1>
                         <p className="text-base font-medium text-slate-500 mt-2 m-0 flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-                            Configure 24-week curriculums and practical assignments
+                            Configure 24-WEEKS curriculums and practical assignments
                         </p>
                     </div>
-                    
-                    <button 
-                        className="bg-indigo-600 text-white font-bold py-3 px-6 rounded-2xl hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-500/30 hover:-translate-y-0.5 transition-all flex items-center gap-2" 
+
+                    <button
+                        className="bg-indigo-600 text-white font-bold py-3 px-6 rounded-2xl hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-500/30 hover:-translate-y-0.5 transition-all flex items-center gap-2"
                         onClick={toggleForm}
                     >
                         <Plus size={20} strokeWidth={2.5} /> Create New Project
@@ -438,24 +438,23 @@ const AdvProjectPage = () => {
                                                     </div>
                                                 </td>
                                                 <td className="px-6 py-5 text-center">
-                                                    <span className={`inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-widest border ${
-                                                        proj.level === 'Advanced' ? 'bg-rose-50 text-rose-600 border-rose-200' :
-                                                        proj.level === 'Intermediate' ? 'bg-amber-50 text-amber-600 border-amber-200' :
-                                                        'bg-emerald-50 text-emerald-600 border-emerald-200'
-                                                    }`}>
+                                                    <span className={`inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-widest border ${proj.level === 'Advanced' ? 'bg-rose-50 text-rose-600 border-rose-200' :
+                                                            proj.level === 'Intermediate' ? 'bg-amber-50 text-amber-600 border-amber-200' :
+                                                                'bg-emerald-50 text-emerald-600 border-emerald-200'
+                                                        }`}>
                                                         {proj.level}
                                                     </span>
                                                 </td>
                                                 <td className="px-6 py-5 text-right">
                                                     <div className="flex items-center justify-end gap-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-                                                        <button 
+                                                        <button
                                                             onClick={() => handleEdit(proj)}
                                                             className="w-9 h-9 rounded-xl flex items-center justify-center bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white transition-all shadow-sm"
                                                             title="Edit Project"
                                                         >
                                                             <Edit2 size={16} strokeWidth={2.5} />
                                                         </button>
-                                                        <button 
+                                                        <button
                                                             onClick={() => handleDelete(proj._id)}
                                                             className="w-9 h-9 rounded-xl flex items-center justify-center bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white transition-all shadow-sm"
                                                             title="Delete Project"
@@ -473,7 +472,7 @@ const AdvProjectPage = () => {
                     </div>
                 )}
             </div>
-            
+
             <style>{`
                 .custom-scrollbar::-webkit-scrollbar {
                     width: 6px;

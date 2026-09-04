@@ -10,13 +10,13 @@ import promptEngineeringBrochure from "../../atorax/Prompt engineering for gener
 import DownloadBrochureButton from "../page/AdvanceCourse/Components/DownloadBrochureButton";
 
 // import ds from '../assets/Advanced Course Images/Data science/DS 3.jpg'
-// import dm from '../assets/Advanced Course Images/Digital Markting/DM 1.jpg'
+// import dm from '../assets/Advanced Course Images/Digital Marketing/DM 1.jpg'
 // import ib from '../assets/Advanced Course Images/Investment banking/IB 6.jpg'
 // import mern from '../assets/Advanced Course Images/Mern Stack Development/MSD 1.jpg'
 // import pm from '../assets/Advanced Course Images/Product management/PM 4.jpg'
 // import pfm from '../assets/Advanced Course Images/Performance marketing/PM 3.jpg'
 
-const AdvanceCounses = () => {
+const AdvanceCourses = () => {
   const courses = [
     {
       institute: "ATORAX School Of Technology",
@@ -274,4 +274,4 @@ const AdvanceCounses = () => {
   );
 };
 
-export default AdvanceCounses;
+export default AdvanceCourses;

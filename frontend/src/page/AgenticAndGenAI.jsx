@@ -25,11 +25,11 @@ const heroImages = [cyberTechBg, cyberTechBg2, cyberTechBg3];
 
 const trustStats = [
   { value: "24 Weeks", label: "Duration" },
-   { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
+  { value: "30 Interviews", label: "Interview Call Opportunities Guaranteed" },
   // { value: "", label: "" },
   { value: "60 Students", label: "Batch Size" },
   { value: "5 Capstones", label: "Enterprise Projects" },
- 
+
 ];
 
 /* ──────── DATA ──────── */
@@ -255,7 +255,7 @@ const AgenticAndGenAI = () => {
               <span className="absolute w-2 h-2 rounded-full bg-[#10b981] opacity-100" />
               <span className="absolute w-4 h-4 rounded-full bg-[#10b981]/40 animate-ping" />
             </div>
-            24-WEEK AGENTIC AI PROGRAM
+            24-WEEKS AGENTIC AI PROGRAM
           </div>
 
           {/* Epic Metallic Typography */}
@@ -410,7 +410,7 @@ const AgenticAndGenAI = () => {
           <div style={{ textAlign: "center", marginBottom: 52 }}>
             <div className="ato-badge" style={{ marginBottom: 18 }}>Curriculum Overview</div>
             <h2 className="ato-h2" style={{ marginBottom: 14, marginTop: 16 }}>Everything you will master</h2>
-            <p className="ato-lead" style={{ maxWidth: 520, margin: "0 auto" }}>A comprehensive 16-week journey from LLM fundamentals to enterprise AI architecture.</p>
+            <p className="ato-lead" style={{ maxWidth: 520, margin: "0 auto" }}>A comprehensive 16-Weeks journey from LLM fundamentals to enterprise AI architecture.</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))", gap: 16 }}>
             {FEATURES.map((f, i) => (
@@ -432,7 +432,7 @@ const AgenticAndGenAI = () => {
       <div id="curriculum">
         <PremiumCurriculum
           phases={agenticPhases}
-          title="16-Week Agentic AI Roadmap"
+          title="16-Weeks Agentic AI Roadmap"
           accentColor="text-[#10b981]"
           bgColor="bg-[#0B1120]"
           cardBgColor="bg-[#151B2B]"

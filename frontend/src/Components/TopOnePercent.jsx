@@ -18,7 +18,7 @@ const features = [
   },
   {
     Icon: CalendarDays,
-    title: "16-Week Intensive Career Program",
+    title: "16-Weeks Intensive Career Program",
     sub: "Follow a structured, week-by-week roadmap. Master everything from core fundamentals to advanced industry-standard tools.",
   },
   {

@@ -16,7 +16,7 @@ const allReviews = [
   { name: "Aditi Joshi", prev: "B.Com", role: "Software Developer", quote: "The hands-on labs forced me to code every day. I didn't feel like a beginner after the first 8 weeks of the program." },
   { name: "Manish Tiwari", prev: "MBA", role: "Product Engineer", quote: "I realized I wanted to build products, not just manage them. The transition was tough but Atorax made it entirely worth it." },
   { name: "Neha Chauhan", prev: "Teacher", role: "Backend Dev", quote: "I used to teach math, now I code scalable databases. The support team answered my doubts patiently at every step." },
-  { name: "Arjun Nair", prev: "BPO Support", role: "SDE", quote: "Moving from BPO to core tech was a dream. The 24-week timeline is intense but the curriculum is perfectly designed." },
+  { name: "Arjun Nair", prev: "BPO Support", role: "SDE", quote: "Moving from BPO to core tech was a dream. The 24-WEEKS timeline is intense but the curriculum is perfectly designed." },
   { name: "Kavya Menon", prev: "BA English", role: "Frontend Dev", quote: "I thought you needed a CS degree to code. This program proved that wrong. I now build beautiful interactive UIs in Next.js!" },
   { name: "Sanjay Kumar", prev: "Operations", role: "DevOps Engineer", quote: "From running excel sheets to deploying Docker containers. The practical assignments are gold for anyone starting fresh." },
   { name: "Riya Das", prev: "HR Executive", role: "Full Stack Dev", quote: "I hired developers and realized I wanted to be one. Atorax gave me the exact roadmap I needed to make the switch." },
@@ -43,14 +43,14 @@ const ReviewCard = ({ review }) => (
         "{review.quote}"
       </p>
     </div>
-    
+
     <div className="pt-4 border-t border-white/10 mt-4 flex items-center justify-between z-10">
       <div>
         <h4 className="text-white font-bold text-base">{review.name}</h4>
         <div className="flex items-center gap-2 mt-1">
           <span className="text-xs text-gray-400 line-through decoration-red-500/50">{review.prev}</span>
           <span className="text-primary text-sm font-bold flex items-center gap-1">
-             <Code size={12}/> {review.role}
+            <Code size={12} /> {review.role}
           </span>
         </div>
       </div>
@@ -88,7 +88,7 @@ const NonTechReviewsMarquee = () => {
 
   const settingsRow1 = {
     ...baseSettings,
-    speed: 30000, 
+    speed: 30000,
     slidesToShow: 3.5,
     responsive: [
       { breakpoint: 1200, settings: { slidesToShow: 3 } },
@@ -110,7 +110,7 @@ const NonTechReviewsMarquee = () => {
   return (
     <section className="py-24 bg-[#07090b] relative overflow-hidden border-t border-white/5 min-h-[600px]">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16 relative z-10">
-        <motion.span 
+        <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -118,7 +118,7 @@ const NonTechReviewsMarquee = () => {
         >
           Career Transformations
         </motion.span>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -127,7 +127,7 @@ const NonTechReviewsMarquee = () => {
         >
           From Non-Tech to <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-400">Software Engineer</span>
         </motion.h2>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -153,7 +153,7 @@ const NonTechReviewsMarquee = () => {
             ))}
           </Slider>
         </div>
-        
+
         {/* Gradient Fades for Smooth Edges */}
         <div className="absolute top-0 bottom-0 left-0 w-24 bg-gradient-to-r from-[#07090b] to-transparent pointer-events-none" />
         <div className="absolute top-0 bottom-0 right-0 w-24 bg-gradient-to-l from-[#07090b] to-transparent pointer-events-none" />
