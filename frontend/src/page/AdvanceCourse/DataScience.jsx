@@ -383,7 +383,7 @@ const DataScience = () => {
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
                <h2 style={{ fontSize: '32px', fontWeight: 800, marginBottom: '16px' }}>Fees & Payment Options</h2>
                <p style={{ fontSize: '17px', color: '#6B7280', marginBottom: '48px' }}>Transparent program cost with structured installment plans and financial assistance.</p>
-               <PaymentPlanWidget basePrice={51999} durationMonths={3} courseName="DataScience" />
+               <PaymentPlanWidget basePrice={45999} durationMonths={3} courseName="DataScience" />
             </div>
          </section>
 

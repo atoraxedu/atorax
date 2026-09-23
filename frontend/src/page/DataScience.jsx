@@ -18,6 +18,7 @@ import MarketLeaders from "../Components/MarketLeaders";
 import MeetYourMentors from "../Components/MeetYourMentors";
 import FloatingNav from "../Components/FloatingNav";
 import AuthorityMarquee from "../Components/AuthorityMarquee";
+import MncReviews from "../Components/MncReviews";
 import "./DataScience.css";
 
 import heroDsGraphic from "../assets/ds_hero_gold_1.png";
@@ -168,7 +169,7 @@ const faqData = [
   { q: "Will I get certified?", a: "Yes. You earn 4 Professional Certifications including Data Science, Machine Learning, Generative AI, and Capstone Project." },
   { q: "Do you provide placement support?", a: "Yes, Phase 3 is entirely dedicated to Resume Mastery, Interview Prep, Case Studies, and Placement Support." },
   { q: "What kind of projects will I build?", a: "You will build 10+ hands-on projects, ranging from Sales Dashboards and Churn Prediction to a full Custom AI Chatbot using LLMs." },
-    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DataScience = () => {
@@ -347,6 +348,7 @@ const DataScience = () => {
 
       {/* COLLABORATION COMPANY MARQUEE */}
       <AuthorityMarquee theme="dark" />
+      <MncReviews />
 
       {/* TOP ONE PERCENT (PROGRAM HIGHLIGHTS) */}
       <TopOnePercent
@@ -622,7 +624,7 @@ const DataScience = () => {
             </h2>
             <p className="text-gray-400 text-lg">Transparent pricing. Flexible payment options.</p>
           </div>
-          <PaymentPlanWidget basePrice={51999} durationMonths={6} courseName="Data Science" themeColor="#eab308" />
+          <PaymentPlanWidget basePrice={45999} durationMonths={6} courseName="Data Science" themeColor="#eab308" />
         </div>
       </section>
 

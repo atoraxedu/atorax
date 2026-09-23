@@ -11,6 +11,7 @@ import PaymentPlanWidget from "../Components/PaymentPlanWidget";
 import PremiumCurriculum from "../Components/PremiumCurriculum";
 import ProgramStatsBar from "../Components/ProgramStatsBar";
 import AuthorityMarquee from "../Components/AuthorityMarquee";
+import MncReviews from "../Components/MncReviews";
 import NonTechReviewsMarquee from "../Components/NonTechReviewsMarquee";
 import Certification from "./AdvanceCourse/Components/Certification";
 import SalaryGrowth from "../Components/SalaryGrowth";
@@ -163,7 +164,7 @@ const capstoneProjects = [
 ];
 
 const faqData = [
-  q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
+  { q: "Is this a job guarantee or an interview guarantee?", a: "An interview guarantee — up to 20 real interview opportunities with vetted hiring partners. Whether you convert depends on your performance, which is exactly why prep is built into the program." },
   { q: "What happens if I don't clear the skill evaluation?", a: "You'll get clear, specific feedback on what to improve, so you know exactly what to work on before you re-attempt it." },
 
   { q: "What is the duration of the program?", a: "The program runs for 16 weeks (4 months) consisting of 12 weeks of core technical training and capstone projects, and 4 weeks of career branding & interview prep." },
@@ -172,7 +173,7 @@ const faqData = [
   { q: "Will I get certified upon completion?", a: "Yes, you earn a professional-grade verifiable Software Engineering and AI Application Developer certification recognized by 500+ corporate hiring partners." },
   { q: "What projects will I build?", a: "You will build over 6 real-world enterprise projects including a Netflix clone, an LMS platform, and a comprehensive AI-powered capstone project such as a recruitment CRM or FinTech solution." },
   { q: "Does the program include placement support?", a: "Yes, the last 4 weeks are entirely dedicated to advanced DSA prep, SOLID system design, resume review, LinkedIn profiling, and mock technical & HR interviews, backed by direct placement support." },
-  {   { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const Tag = ({ children }) => (
@@ -356,6 +357,7 @@ const SoftwareDeveloper = () => {
 
       {/* COLLABORATION COMPANY MARQUEE */}
       <AuthorityMarquee theme="dark" />
+      <MncReviews />
 
       {/* CAREER TRACKS */}
       <section id="paths" className="py-24 px-6 bg-[#050505] border-t border-white/5">
@@ -617,7 +619,7 @@ const SoftwareDeveloper = () => {
             </h2>
             <p className="text-gray-400 text-lg">Transparent pricing. Flexible payment options.</p>
           </div>
-          <PaymentPlanWidget basePrice={51999} durationMonths={6} courseName="Cybersecurity" themeColor="#e11d48" />
+          <PaymentPlanWidget basePrice={45999} durationMonths={6} courseName="Cybersecurity" themeColor="#e11d48" />
         </div>
       </section>
 

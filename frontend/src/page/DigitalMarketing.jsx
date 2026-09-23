@@ -17,6 +17,7 @@ import CareerOutcomes from "../Components/CareerOutcomes";
 import MarketLeaders from "../Components/MarketLeaders";
 import MeetYourMentors from "../Components/MeetYourMentors";
 import AuthorityMarquee from "../Components/AuthorityMarquee";
+import MncReviews from "../Components/MncReviews";
 import FloatingNav from "../Components/FloatingNav";
 import "./DigitalMarketing.css";
 
@@ -163,7 +164,7 @@ const faqData = [
   { q: "What tools will I learn?", a: "You will master 30+ industry tools including Meta Ads, Google Ads, GA4, Ahrefs, HubSpot, Zapier, ChatGPT, and Midjourney." },
   { q: "Do you provide placement support?", a: "Yes! Weeks 13-16 are completely dedicated to Resume building, Portfolio creation, Mock Interviews, and direct Placement Outreach." },
   { q: "How much AI is involved?", a: "AI is deeply integrated. You will learn Prompt Engineering, AI SEO, AI Content Generation (Claude/Gemini), and AI Image Generation (Midjourney/Canva)." },
-    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DigitalMarketing = () => {
@@ -327,6 +328,7 @@ const DigitalMarketing = () => {
 
       {/* COLLABORATION COMPANY MARQUEE */}
       <AuthorityMarquee theme="dark" />
+      <MncReviews />
 
       {/* TOP ONE PERCENT (PROGRAM HIGHLIGHTS) */}
       <TopOnePercent
@@ -597,7 +599,7 @@ const DigitalMarketing = () => {
             </h2>
             <p className="text-gray-400 text-lg">Transparent pricing. Flexible payment options.</p>
           </div>
-          <PaymentPlanWidget basePrice={51999} durationMonths={6} courseName="Digital Marketing" themeColor="#f59e0b" />
+          <PaymentPlanWidget basePrice={45999} durationMonths={6} courseName="Digital Marketing" themeColor="#f59e0b" />
         </div>
       </section>
 

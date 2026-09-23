@@ -17,6 +17,7 @@ import CareerOutcomes from "../Components/CareerOutcomes";
 import MarketLeaders from "../Components/MarketLeaders";
 import MeetYourMentors from "../Components/MeetYourMentors";
 import AuthorityMarquee from "../Components/AuthorityMarquee";
+import MncReviews from "../Components/MncReviews";
 import "./DataAnalytics.css";
 
 import heroDaGraphic from "../assets/da_hero_cyan_1.png";
@@ -168,7 +169,7 @@ const faqData = [
   { q: "Will I get certified?", a: "Yes. You earn multiple Professional Certifications including Data Analytics, SQL, Power BI, Python, and AI for Business." },
   { q: "Do you provide placement support?", a: "Yes! Weeks 13-16 are entirely dedicated to Resume building, Interview Prep (150+ SQL questions), Mock Interviews, and direct Placement Acceleration." },
   { q: "What kind of projects will I build?", a: "You will build 8 hands-on portfolio projects, ranging from Retail Sales Dashboards and Marketing Analytics to a full end-to-end Industry Capstone using AI." },
-    { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
+  { q: "Are these real, active job openings?", a: "Yes. We work directly with hiring partners on live mandates — not scraped or expired listings." },
 ];
 
 const DataAnalytics = () => {
@@ -347,6 +348,7 @@ const DataAnalytics = () => {
 
       {/* COLLABORATION COMPANY MARQUEE */}
       <AuthorityMarquee theme="dark" />
+      <MncReviews />
 
       {/* TOP ONE PERCENT (PROGRAM HIGHLIGHTS) */}
       <TopOnePercent
@@ -621,7 +623,7 @@ const DataAnalytics = () => {
             </h2>
             <p className="text-gray-400 text-lg">Transparent pricing. Flexible payment options.</p>
           </div>
-          <PaymentPlanWidget basePrice={51999} durationMonths={6} courseName="Data Analytics" themeColor="#0ea5e9" />
+          <PaymentPlanWidget basePrice={45999} durationMonths={6} courseName="Data Analytics" themeColor="#0ea5e9" />
         </div>
       </section>
 
