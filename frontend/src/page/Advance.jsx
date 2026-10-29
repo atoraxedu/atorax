@@ -19,6 +19,21 @@ import CountdownTimer from "./AdvanceCourse/Components/CountdownTimer";
 
 const programs = [
    {
+      id: "ai-eng-genai",
+      icon: <BrainCircuit size={28} />,
+      name: "AI Engineering & Generative AI",
+      positioning: "Don't just use AI. Learn to BUILD, INTEGRATE, DEPLOY and EVALUATE production AI applications from idea to product.",
+      dur: "16 Weeks (4 Months)",
+      idealFor: "Engineers, developers & tech professionals targeting top-tier AI roles.",
+      tools: ["Python", "FastAPI", "LangGraph", "Docker", "RAG"],
+      link: "/AgenticAndGenAI",
+      cat: "AI & Data",
+      accent: "bg-emerald-500",
+      shadow: "shadow-emerald-500/20",
+      gradient: "from-emerald-400 via-teal-400 to-cyan-500",
+      bgImage: "/program-bg/ds-genai.png"
+   },
+   {
       id: "ds-genai",
       icon: <BrainCircuit size={28} />,
       name: "Data Science & GenAI",
@@ -310,7 +325,9 @@ const Advance = () => {
       return () => window.removeEventListener("scroll", handleScroll);
    }, []);
 
-   const filteredPrograms = filter === "All" ? programs : programs.filter(p => p.cat === filter);
+   const filteredPrograms = filter === "All"
+      ? programs
+      : programs.filter(p => p.cat === filter || (p.id === "ai-eng-genai" && (filter === "AI & Data" || filter === "Engineering")));
 
    return (
       <div className="bg-zinc-950 text-zinc-300 font-['Plus_Jakarta_Sans'] min-h-screen selection:bg-indigo-500/30">
