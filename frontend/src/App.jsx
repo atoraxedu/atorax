@@ -41,6 +41,7 @@ import Attendance from "./page/Attendance";
 import AdvanceApplyPage from "./page/AdvanceApplyPage";
 import AdvanceForm from "./page/AdvanceForm";
 import AgenticAndGenAI from "./page/AgenticAndGenAI";
+import AIEngineering from "./page/AIEngineering";
 import SoftwareDeveloper from "./page/SoftwareDeveloper";
 import AIFullStack from "./page/AIFullStack";
 import Blog from "./page/Blog";
@@ -501,8 +502,8 @@ const AppContent = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/Advance" element={<Advance />} />
         <Route path="/AgenticAndGenAI" element={<AgenticAndGenAI />} />
-        <Route path="/AIEngineering" element={<AgenticAndGenAI />} />
-        <Route path="/ai-engineering" element={<AgenticAndGenAI />} />
+        <Route path="/AIEngineering" element={<AIEngineering />} />
+        <Route path="/ai-engineering" element={<AIEngineering />} />
         <Route path="/SoftwareDeveloper" element={<SoftwareDeveloper />} />
         <Route path="/AIFullStack" element={<AIFullStack />} />
         <Route path="/advance-apply" element={<AdvanceApplyPage />} />

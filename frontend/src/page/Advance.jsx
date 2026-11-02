@@ -18,6 +18,21 @@ import AuthorityMarquee from "../Components/AuthorityMarquee";
 import CountdownTimer from "./AdvanceCourse/Components/CountdownTimer";
 
 const programs = [
+   // {
+   //    id: "agentic-genai",
+   //    icon: <BrainCircuit size={28} />,
+   //    name: "Agentic AI & Generative AI",
+   //    positioning: "Master LLMs, Multi-Agent systems, and production AI architecture to build autonomous enterprise workflows.",
+   //    dur: "24 Weeks (6 Months)",
+   //    idealFor: "Developers and engineers building autonomous agentic systems and production GenAI pipelines.",
+   //    tools: ["CrewAI", "LangGraph", "Python", "Vector DBs", "RAG"],
+   //    link: "/AgenticAndGenAI",
+   //    cat: "AI & Data",
+   //    accent: "bg-emerald-500",
+   //    shadow: "shadow-emerald-500/20",
+   //    gradient: "from-emerald-400 via-teal-400 to-cyan-500",
+   //    bgImage: "/program-bg/ds-genai.png"
+   // },
    {
       id: "ai-eng-genai",
       icon: <BrainCircuit size={28} />,
@@ -26,7 +41,7 @@ const programs = [
       dur: "16 Weeks (4 Months)",
       idealFor: "Engineers, developers & tech professionals targeting top-tier AI roles.",
       tools: ["Python", "FastAPI", "LangGraph", "Docker", "RAG"],
-      link: "/AgenticAndGenAI",
+      link: "/AIEngineering",
       cat: "AI & Data",
       accent: "bg-emerald-500",
       shadow: "shadow-emerald-500/20",
@@ -79,21 +94,21 @@ const programs = [
       bgImage: "/program-bg/ai-fsd.png"
    },
 
-   {
-      id: "cyber",
-      icon: <ShieldCheck size={28} />,
-      name: "Cybersecurity",
-      positioning: "Defend modern digital systems with ethical hacking and security architecture.",
-      dur: "16 Weeks",
-      idealFor: "IT pros shifting to security.",
-      tools: ["Pen-testing", "Cloud Sec", "CompTIA"],
-      link: "/Cybersecurity",
-      cat: "Engineering",
-      accent: "bg-rose-500",
-      shadow: "shadow-rose-500/20",
-      gradient: "from-rose-500 to-red-600",
-      bgImage: "/program-bg/cyber.png"
-   },
+   // {
+   //    id: "cyber",
+   //    icon: <ShieldCheck size={28} />,
+   //    name: "Cybersecurity",
+   //    positioning: "Defend modern digital systems with ethical hacking and security architecture.",
+   //    dur: "16 Weeks",
+   //    idealFor: "IT pros shifting to security.",
+   //    tools: ["Pen-testing", "Cloud Sec", "CompTIA"],
+   //    link: "/Cybersecurity",
+   //    cat: "Engineering",
+   //    accent: "bg-rose-500",
+   //    shadow: "shadow-rose-500/20",
+   //    gradient: "from-rose-500 to-red-600",
+   //    bgImage: "/program-bg/cyber.png"
+   // },
    {
       id: "dm-ai",
       icon: <Megaphone size={28} />,
@@ -327,7 +342,7 @@ const Advance = () => {
 
    const filteredPrograms = filter === "All"
       ? programs
-      : programs.filter(p => p.cat === filter || (p.id === "ai-eng-genai" && (filter === "AI & Data" || filter === "Engineering")));
+      : programs.filter(p => p.cat === filter || ((p.id === "ai-eng-genai" || p.id === "agentic-genai") && (filter === "AI & Data" || filter === "Engineering")));
 
    return (
       <div className="bg-zinc-950 text-zinc-300 font-['Plus_Jakarta_Sans'] min-h-screen selection:bg-indigo-500/30">

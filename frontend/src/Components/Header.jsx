@@ -6,7 +6,7 @@ import AdvancedApplyPopup from "./AdvancedApplyPopup";
 const topNav = [
   { label: "ALL PROGRAMS", to: "/Advance" },
   { label: "SOFTWARE DEVELOPER", to: "/SoftwareDeveloper" },
-  { label: "AI ENGINEERING & GENAI", to: "/AgenticAndGenAI" },
+  { label: "AGENTIC AND GENAI", to: "/AgenticAndGenAI" },
   { label: "ALUMNI", to: "/Alumni" },
   { label: "MASTERCLASS", to: "/MasterClass" },
   { label: "CAREER ASSESSMENT", to: "/career-assessment" },
