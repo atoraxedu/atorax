@@ -30,7 +30,7 @@ const trustStats = [
   { value: "4 Months", label: "Program Duration" },
   { value: "16 Weeks", label: "Live Intensive Training" },
   { value: "5 Capstones", label: "Enterprise Projects" },
-  { value: "30 Calls", label: "Guaranteed Interview Engine" },
+  { value: "15  Calls", label: "Guaranteed Interview Engine" },
   { value: "60 Seats", label: "Strict Cohort Limit" },
 ];
 
@@ -660,22 +660,20 @@ const AgenticAndGenAI = () => {
             <div className="flex flex-wrap justify-center items-center gap-3 mt-8">
               <button
                 onClick={() => setPathwayView("stages")}
-                className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
-                  pathwayView === "stages"
+                className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${pathwayView === "stages"
                     ? "bg-emerald-500 text-white shadow-[0_0_25px_rgba(16,185,129,0.4)]"
                     : "bg-white/5 text-gray-400 hover:text-white border border-white/10"
-                }`}
+                  }`}
               >
                 <Layers size={14} />
                 4-Stage Architecture Pipeline
               </button>
               <button
                 onClick={() => setPathwayView("circuit")}
-                className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${
-                  pathwayView === "circuit"
+                className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 ${pathwayView === "circuit"
                     ? "bg-emerald-500 text-white shadow-[0_0_25px_rgba(16,185,129,0.4)]"
                     : "bg-white/5 text-gray-400 hover:text-white border border-white/10"
-                }`}
+                  }`}
               >
                 <Workflow size={14} />
                 15-Step Circuit Stream
@@ -698,11 +696,10 @@ const AgenticAndGenAI = () => {
                   <button
                     key={f.id}
                     onClick={() => setActiveStageFilter(f.id)}
-                    className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
-                      activeStageFilter === f.id
+                    className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${activeStageFilter === f.id
                         ? "bg-white/15 text-white border border-white/20 shadow-md"
                         : "bg-white/[0.03] text-gray-400 hover:text-gray-200 border border-white/5"
-                    }`}
+                      }`}
                   >
                     {f.label}
                   </button>
@@ -1122,21 +1119,19 @@ const AgenticAndGenAI = () => {
           <div className="flex justify-center gap-4 mb-8">
             <button
               onClick={() => setRoleTab("early")}
-              className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
-                roleTab === "early"
+              className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${roleTab === "early"
                   ? "bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.4)]"
                   : "bg-white/5 text-gray-400 hover:text-white"
-              }`}
+                }`}
             >
               Entry-Level / Early Career
             </button>
             <button
               onClick={() => setRoleTab("experienced")}
-              className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
-                roleTab === "experienced"
+              className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${roleTab === "experienced"
                   ? "bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.4)]"
                   : "bg-white/5 text-gray-400 hover:text-white"
-              }`}
+                }`}
             >
               With Prior Dev Experience
             </button>
@@ -1331,7 +1326,7 @@ const AgenticAndGenAI = () => {
             <h2 className="ato-h2 text-white" style={{ marginBottom: 14, marginTop: 16 }}>Transparent Investment. Proven ROI.</h2>
             <p className="ato-sub text-gray-400">Complete 4-month curriculum, 5 capstones, 1:1 mentors, and guaranteed interview engine.</p>
           </div>
-          <PaymentPlanWidget basePrice={96000} durationMonths={4} courseName="AI Engineering & Generative AI" themeColor="#10b981" />
+          <PaymentPlanWidget basePrice={45999} durationMonths={4} courseName="AI Engineering & Generative AI" themeColor="#10b981" />
         </div>
       </section>
 
