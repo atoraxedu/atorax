@@ -26,9 +26,9 @@ const Footer = () => {
       {/* Background Glows */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none transform -translate-y-1/2"></div>
       <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none transform -translate-y-1/2"></div>
-      
+
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
-        
+
         {/* Top Section: CTA / Newsletter */}
         <div className="flex flex-col md:flex-row justify-between items-center bg-white/[0.02] border border-white/5 rounded-2xl p-8 mb-16 backdrop-blur-sm">
           <div className="mb-6 md:mb-0">
@@ -43,19 +43,19 @@ const Footer = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
-          
+
           {/* Brand Info */}
           <div className="lg:col-span-4">
             <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
               {/* <div className="bg-white/5 p-2 rounded-xl border border-white/10 group-hover:border-white/20 transition-colors"> */}
-                <img src={logo} alt="Atorax" className="h-20 w-auto object-contain" />
+              <img src={logo} alt="Atorax" className="h-20 w-auto object-contain" />
               {/* </div> */}
               {/* <span className="text-2xl font-black tracking-widest text-white">ATORAX</span> */}
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
               Empowering the next generation of engineers with structured learning, expert mentorship, and measured career outcomes. Build the future with Atorax.
             </p>
-            
+
             <div className="flex gap-3">
               {[
                 { icon: <FaLinkedinIn size={16} />, href: '#' },
@@ -63,8 +63,8 @@ const Footer = () => {
                 { icon: <FaTwitter size={16} />, href: '#' },
                 { icon: <FaGithub size={16} />, href: '#' },
               ].map((s, i) => (
-                <a key={i} href={s.href} 
-                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 hover:border-blue-500/30 transition-all transform hover:-translate-y-1">
+                <a key={i} href={s.href}
+                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 hover:border-blue-500/30 transition-all transform hover:-translate-y-1">
                   {s.icon}
                 </a>
               ))}
@@ -101,17 +101,17 @@ const Footer = () => {
                   <div className="text-gray-300 text-sm group-hover:text-white transition-colors">support@atorax.com</div>
                 </div>
               </a>
-              
-              <a href="tel:+917829104024" className="flex items-start gap-4 group">
+
+              <a href="tel:+919686398362" className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all shrink-0">
                   <FaPhoneAlt size={14} />
                 </div>
                 <div>
                   <div className="text-xs text-gray-500 font-medium mb-1">Phone</div>
-                  <div className="text-gray-300 text-sm group-hover:text-white transition-colors">+91 7829104024</div>
+                  <div className="text-gray-300 text-sm group-hover:text-white transition-colors">+91 9686398362</div>
                 </div>
               </a>
-              
+
               <div className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all shrink-0">
                   <FaMapMarkerAlt size={14} />
@@ -123,7 +123,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
         </div>
 
         {/* Bottom Bar */}
