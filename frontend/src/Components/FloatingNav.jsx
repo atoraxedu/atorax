@@ -15,6 +15,16 @@ const FloatingNav = ({ onApplyClick }) => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Hide floating nav when user scrolls down into the footer
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        if (footerRect.top <= window.innerHeight - 40) {
+          setIsVisible(false);
+          return;
+        }
+      }
+
       // Show nav after scrolling past hero a bit (e.g., 300px)
       if (window.scrollY > 300) {
         setIsVisible(true);
