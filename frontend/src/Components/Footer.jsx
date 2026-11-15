@@ -1,146 +1,249 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/atorax_logo_non_trans.png";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaLinkedinIn, FaInstagram, FaTwitter, FaArrowRight, FaGithub } from "react-icons/fa";
+import logoTrans from "../assets/atorax_logo_trans.png";
+import logoNonTrans from "../assets/atorax_logo_non_trans.png";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaFacebookF,
+  FaWhatsapp,
+} from "react-icons/fa";
+import AdvancedApplyPopup from "./AdvancedApplyPopup";
 
 const Footer = () => {
-  const platformLinks = [
-    { label: "Home", to: "/" },
-    { label: "All Programs", to: "/SoftwareDeveloper" },
-    { label: "Advanced Programs", to: "/Advance" },
-    { label: "Masterclass", to: "/MasterClass" },
-    { label: "Career Assessment", to: "/career-assessment" },
-    { label: "Blog", to: "/blog" },
+  const [showPopup, setShowPopup] = useState(false);
+
+  const courses = [
+    {
+      title: "Data Science and AI",
+      tag: "PLACEMENT PROGRAM",
+      tagColor: "text-blue-600",
+      to: "/DataScience",
+    },
+    {
+      title: "Software Development",
+      tag: "PLACEMENT PROGRAM",
+      tagColor: "text-blue-600",
+      to: "/SoftwareDeveloper",
+    },
+    {
+      title: "AI Full Stack",
+      tag: "PLACEMENT PROGRAM",
+      tagColor: "text-blue-600",
+      to: "/AIFullStack",
+    },
+    {
+      title: "Agentic and GenAI",
+      tag: "AI PROGRAM",
+      tagColor: "text-blue-600",
+      to: "/AgenticAndGenAI",
+    },
   ];
 
-  const discoverLinks = [];
+  const resources = [
+    { label: "Masterclass", to: "/MasterClass" },
+    { label: "Alumni Network", to: "/Alumni" },
+    { label: "AI Tryouts", to: "/AgenticAndGenAI" },
+    { label: "Curriculum Overview", to: "/Advance" },
+  ];
 
-  const legalLinks = [
-    { label: 'Terms of Service', to: '/Terms' },
-    { label: 'Privacy Policy', to: '/Privacy' },
-    { label: 'Refund Policy', to: '/RefundPolicy' },
+  const company = [
+    { label: "Blogs", to: "/blog" },
+    { label: "Careers", to: "/Career" },
+    { label: "Terms and Conditions", to: "/Terms" },
+    { label: "Privacy Policy", to: "/Privacy" },
+    { label: "Refund Policy", to: "/RefundPolicy" },
+  ];
+
+  const more = [
+    { label: "Teach at Atorax", to: "/Career" },
+    { label: "Verify Certificate", to: "/Verify" },
+    { label: "Create an account", to: "/Login" },
+  ];
+
+  const socialLinks = [
+    {
+      icon: <FaLinkedinIn size={16} />,
+      href: "https://www.linkedin.com/company/atorax/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaInstagram size={16} />,
+      href: "https://www.instagram.com/atorax_?vrfl=MWVpOG95NXR3NW9iMQ%3D%3D&utm_source=qr",
+      label: "Instagram",
+    },
+    {
+      icon: <FaFacebookF size={16} />,
+      href: "https://www.facebook.com/share/18zArK79ac/?mibextid=wwXIfr",
+      label: "Facebook",
+    },
   ];
 
   return (
-    <footer className="relative bg-[#05050A] text-white pt-24 pb-8 overflow-hidden border-t border-white/10 font-sans mt-auto">
-      {/* Background Glows */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none transform -translate-y-1/2"></div>
-      <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none transform -translate-y-1/2"></div>
+    <>
+      <footer className="bg-[#F8FAFC] text-gray-800 font-sans border-t border-gray-200 pt-16 pb-24 mt-auto">
+        <div className="max-w-[1360px] mx-auto px-6 lg:px-12">
+          {/* Main 5-Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-12">
+            
+            {/* Column 1: Brand & Socials (Width: ~3.5 cols) */}
+            <div className="lg:col-span-4 xl:col-span-3 space-y-4">
+              <Link to="/" className="inline-flex items-center gap-2 group">
+                <img
+                  src={logoTrans}
+                  alt="Atorax"
+                  className="h-8 w-auto object-contain"
+                  onError={(e) => {
+                    e.currentTarget.src = logoNonTrans;
+                  }}
+                />
+                <span className="text-xl font-bold tracking-tight text-gray-900">
+                  Atorax
+                </span>
+              </Link>
 
-      <div className="max-w-[1280px] mx-auto px-6 relative z-10">
+              <div className="pt-2">
+               
+                <p className="text-[13px] text-gray-500 leading-relaxed mt-1 max-w-[280px]">
+                  Building phenomenal outcomes with industry-oriented tech education.
+                </p>
+              </div>
 
-        {/* Top Section: CTA / Newsletter */}
-        <div className="flex flex-col md:flex-row justify-between items-center bg-white/[0.02] border border-white/5 rounded-2xl p-8 mb-16 backdrop-blur-sm">
-          <div className="mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-2">Ready to accelerate your career?</h3>
-            <p className="text-gray-400 text-sm">Join the top 1% of tech professionals today.</p>
-          </div>
-          <div className="flex gap-4">
-            <Link to="/career-assessment" className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transform hover:-translate-y-1 flex items-center gap-2">
-              Career Assessment <FaArrowRight size={12} />
-            </Link>
-          </div>
-        </div>
+              <p className="text-[12px] text-gray-500 leading-relaxed pt-2">
+                Copyright © {new Date().getFullYear()} Atorax Technologies Pvt. Ltd. All rights reserved.
+              </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
-
-          {/* Brand Info */}
-          <div className="lg:col-span-4">
-            <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
-              {/* <div className="bg-white/5 p-2 rounded-xl border border-white/10 group-hover:border-white/20 transition-colors"> */}
-              <img src={logo} alt="Atorax" className="h-20 w-auto object-contain" />
-              {/* </div> */}
-              {/* <span className="text-2xl font-black tracking-widest text-white">ATORAX</span> */}
-            </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
-              Empowering the next generation of engineers with structured learning, expert mentorship, and measured career outcomes. Build the future with Atorax.
-            </p>
-
-            <div className="flex gap-3">
-              {[
-                { icon: <FaLinkedinIn size={16} />, href: '#' },
-                { icon: <FaInstagram size={16} />, href: '#' },
-                { icon: <FaTwitter size={16} />, href: '#' },
-                { icon: <FaGithub size={16} />, href: '#' },
-              ].map((s, i) => (
-                <a key={i} href={s.href}
-                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 hover:border-blue-500/30 transition-all transform hover:-translate-y-1">
-                  {s.icon}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Links Grid */}
-          <div className="lg:col-span-2 lg:col-start-6">
-            <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Platform</h4>
-            <ul className="space-y-4">
-              {platformLinks.map((link) => (
-                <li key={link.to}>
-                  <Link to={link.to} className="text-gray-400 hover:text-blue-400 text-sm transition-colors flex items-center gap-2 group">
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-
-
-          {/* Contact */}
-          <div className="lg:col-span-3 lg:col-start-10">
-            <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-wider">Contact Us</h4>
-            <div className="space-y-5">
-              <a href="mailto:support@atorax.com" className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all shrink-0">
-                  <FaEnvelope size={14} />
-                </div>
-                <div>
-                  <div className="text-xs text-gray-500 font-medium mb-1">Email</div>
-                  <div className="text-gray-300 text-sm group-hover:text-white transition-colors">support@atorax.com</div>
-                </div>
-              </a>
-
-              <a href="tel:+919686398362" className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all shrink-0">
-                  <FaPhoneAlt size={14} />
-                </div>
-                <div>
-                  <div className="text-xs text-gray-500 font-medium mb-1">Phone</div>
-                  <div className="text-gray-300 text-sm group-hover:text-white transition-colors">+91 9686398362</div>
-                </div>
-              </a>
-
-              <div className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-500 transition-all shrink-0">
-                  <FaMapMarkerAlt size={14} />
-                </div>
-                <div>
-                  <div className="text-xs text-gray-500 font-medium mb-1">Office</div>
-                  <div className="text-gray-300 text-sm group-hover:text-white transition-colors">Bengaluru, KA, India</div>
+              {/* Follow Us */}
+              <div className="pt-3">
+                <p className="text-[12px] font-semibold text-gray-700 mb-3">
+                  Follow us
+                </p>
+                <div className="flex items-center gap-4 text-gray-700">
+                  {socialLinks.map((s, idx) => (
+                    <a
+                      key={idx}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      className="hover:text-blue-600 transition-colors"
+                    >
+                      {s.icon}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
 
+            {/* Column 2: Courses */}
+            <div className="lg:col-span-2 xl:col-span-3">
+              <h3 className="text-[14px] font-bold text-gray-900 mb-4">Courses</h3>
+              <div className="space-y-4">
+                {courses.map((item, idx) => (
+                  <div key={idx} className="group">
+                    <Link
+                      to={item.to}
+                      className="text-[13px] font-semibold text-gray-800 hover:text-blue-600 transition-colors block leading-tight"
+                    >
+                      {item.title}
+                    </Link>
+                    <span
+                      className={`text-[10px] font-bold tracking-wider uppercase block mt-1 ${item.tagColor}`}
+                    >
+                      {item.tag}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Column 3: Resources */}
+            <div className="lg:col-span-2">
+              <h3 className="text-[14px] font-bold text-gray-900 mb-4">Resources</h3>
+              <ul className="space-y-3">
+                {resources.map((item, idx) => (
+                  <li key={idx}>
+                    <Link
+                      to={item.to}
+                      className="text-[13px] text-gray-700 hover:text-blue-600 transition-colors block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 4: Company */}
+            <div className="lg:col-span-2">
+              <h3 className="text-[14px] font-bold text-gray-900 mb-4">Company</h3>
+              <ul className="space-y-3">
+                {company.map((item, idx) => (
+                  <li key={idx}>
+                    <Link
+                      to={item.to}
+                      className="text-[13px] text-gray-700 hover:text-blue-600 transition-colors block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 5: More */}
+            <div className="lg:col-span-2">
+              <h3 className="text-[14px] font-bold text-gray-900 mb-4">More</h3>
+              <ul className="space-y-3">
+                {more.map((item, idx) => (
+                  <li key={idx}>
+                    <Link
+                      to={item.to}
+                      className="text-[13px] text-gray-700 hover:text-blue-600 transition-colors block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
+      </footer>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Atorax. All rights reserved.
-          </p>
-          <div className="flex flex-wrap items-center gap-6">
-            {legalLinks.map((link) => (
-              <Link key={link.to} to={link.to} className="text-gray-500 hover:text-white text-sm transition-colors">
-                {link.label}
-              </Link>
-            ))}
+      {/* Floating WhatsApp Pill - Right bottom above blue bar */}
+      <div className="fixed bottom-14 right-4 sm:right-6 z-40">
+        <a
+          href="https://wa.me/919686398362?text=Hi%20Atorax%2C%20I%20have%20questions%20regarding%20the%20programme"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white px-4 py-2.5 rounded-lg shadow-lg shadow-green-600/30 font-medium text-xs sm:text-[13px] transition-all transform hover:scale-[1.02] active:scale-95"
+        >
+          <div className="bg-white/20 p-1 rounded-full flex items-center justify-center">
+            <FaWhatsapp size={16} />
           </div>
+          <span>Have questions regarding the programme?</span>
+        </a>
+      </div>
+
+      {/* Sticky Bottom "Need Help? Request Callback" Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#0B5CFF] text-white py-2.5 px-4 shadow-[0_-4px_16px_rgba(11,92,255,0.25)]">
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-4 text-center">
+          <span className="text-xs sm:text-sm font-medium tracking-wide">
+            Need Help?
+          </span>
+          <button
+            onClick={() => setShowPopup(true)}
+            className="bg-white text-[#0B5CFF] hover:bg-gray-50 active:scale-95 font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-sm transition-all"
+          >
+            Request Callback
+          </button>
         </div>
       </div>
-    </footer>
+
+      {/* Callback / Inquiry Modal */}
+      {showPopup && <AdvancedApplyPopup onClose={() => setShowPopup(false)} />}
+    </>
   );
 };
 
